@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Натали Уста](https://up.htmlacademy.ru/adaptive/24/user/1807715).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
