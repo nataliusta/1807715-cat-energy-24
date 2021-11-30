@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo logo">
-      <img class="logo__icon" src="img/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Catenergy.">
+      <img class="logo__icon" src="img/icons/logo-mobile.svg" width="33" height="38" alt="" aria-hidden="true">
       <img class="logo__image" src="img/icons/cat_energy.svg" width="101" height="18" alt="Cat Energy.">
     </a>
     <nav class="main-nav">
@@ -38,13 +38,13 @@
     </nav>
   </header>
 
-  <main class="form-main">
-    <section class="form-page">
-      <div class="form-page__wrapper">
-        <h1 class="form-page__heading heading">
+  <main class="page-main">
+    <section class="main-page">
+      <div class="main-page__wrapper">
+        <h1 class="main-page__heading">
           Подбор программы
         </h1>
-        <p class="form-page__text">
+        <p class="main-page__text">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <form class="form-page__form order-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -70,19 +70,19 @@
               <li class="form-program__item">
                 <label class="form-program__field radio">
                   <input class="radio__input" type="radio" name="program" value="loosing-weight" checked>
-                  <span class="radio-text">Похудение</span>
+                  <span class="radio__text">Похудение</span>
                 </label>
               </li>
               <li class="form-program__item">
                 <label class="form-program__field radio">
                   <input class="radio__input" type="radio" name="program" value="weight-gain">
-                  <span class="radio-text">Набор массы</span>
+                  <span class="radio__text">Набор массы</span>
                 </label>
               </li>
               <li class="form-program__item">
                 <label class="form-program__field radio">
                   <input class="radio__input" type="radio" name="program" value="advice">
-                  <span class="radio-text">Не знаю (Нужен ваш совет)</span>
+                  <span class="radio__text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
@@ -107,7 +107,8 @@
           </fieldset>
 
           <fieldset class="order-form__group form-group">
-            <legend class="form-group__legend">Комментарий</legend>
+            <legend class="visually-hidden">Оставьте комментарий</legend>
+            <label class="form-group__label" for="comment-field">Комментарий</label>
             <textarea name="form-group__textarea" id="comment-field" rows="8">
               Расскажите обо всех повадках кота
             </textarea>
