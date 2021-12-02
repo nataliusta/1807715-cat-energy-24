@@ -1,0 +1,38 @@
+.additional__wrapper {
+  margin: 0 auto;
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+}
+
+.additional__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.additional__product {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $special-dark-grey-text;
+  text-transform: uppercase;
+}
+
+.additional__text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $dark-grey-text;
+}
+
+.additional__price {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+}

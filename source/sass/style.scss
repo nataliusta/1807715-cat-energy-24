@@ -1,1 +1,102 @@
-// Начните писать стили здесь
+
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "fonts.scss";
+
+// Visually-hidden
+
+@import "./blocks/visually-hidden.scss";
+
+// Button
+
+@import "./blocks/button.scss";
+
+// Header
+
+@import "./blocks/page-header.scss";
+
+// Main-nav
+
+@import "./blocks/main-nav.scss";
+
+// Site-list
+
+@import "./blocks/site-list.scss";
+
+// Promo
+
+@import "./blocks/promo.scss";
+
+// Catalog-index
+
+@import "./blocks/catalog-index.scss";
+
+// Catalog-list
+
+@import "./blocks/catalog-list.scss";
+
+// Advantages
+
+@import "./blocks/advantages.scss";
+
+// Progress
+
+@import "./blocks/progress.scss";
+
+// Slider
+
+@import "./blocks/slider.scss";
+
+// Contacts
+
+@import "./blocks/contacts.scss";
+
+// Page-footer
+
+@import "./blocks/page-footer.scss";
+
+// Copyright
+
+@import "./blocks/copyright.scss";
+
+// Catalog
+// Main page
+
+@import "./blocks/main-page.scss";
+
+// Catalog page
+
+@import "./blocks/catalog-page.scss";
+
+// Specifications
+
+@import "./blocks/specifications.scss";
+
+// Show-more
+
+@import "./blocks/show-more.scss";
+
+// Additional
+
+@import "./blocks/additional.scss";
+
+// Gift
+
+@import "./blocks/gift.scss";
+
+// Form
+// Form-page
+
+@import "./blocks/form-page.scss";
+
+// Form-options
+
+@import "./blocks/form-options.scss";
+
+// Form-group
+
+@import "./blocks/form-group.scss";
+
+// Form-program
+
+@import "./blocks/form-program.scss";

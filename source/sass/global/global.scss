@@ -1,0 +1,24 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: $main-regular-font;
+  font-style: normal;
+  background-color: $white-base;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.body-container {
+  margin: 0 auto;
+}
+
+.page-main {
+  margin: 0 auto;
+}
+

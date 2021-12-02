@@ -1,0 +1,28 @@
+.page-footer {
+  min-width: 320px;
+  padding: 39px 20px 22px;
+  background-color: $grey-base;
+}
+
+.page-footer__wrapper {
+  margin: 0 auto;
+}
+
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.page-footer__logo-image {
+  margin-bottom: 32px;
+}
+
+.social-list__item {
+  margin-right: 30px;
+}
+
+.social-list__link {
+  padding: 5px;
+}

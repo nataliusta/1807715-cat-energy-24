@@ -1,0 +1,32 @@
+.form-group__label {
+  margin-bottom: 37px;
+  font-family: $main-regular-font;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: initial;
+}
+
+.form-group__legend {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  font-family: $main-regular-font;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: initial;
+}
+
+textarea {
+  font-family: $main-regular-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $dark-grey-text;
+  text-transform: uppercase;
+}
+
+.form-group__input {
+  padding: 10px;
+}
