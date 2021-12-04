@@ -4,24 +4,23 @@
 
 .contacts {
   padding-top: 27px;
-  box-sizing: border-box;
 }
 
 .contacts__heading {
   margin: 0;
   padding: 0;
   margin-bottom: 26px;
+  font-family: $added-regular-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: $dark-text;
+  color: $color-grey-900;
 }
 
 .contacts__text {
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: $dark-grey-text;
+  color: $color-grey-700;
 }
 
 .contacts__map {

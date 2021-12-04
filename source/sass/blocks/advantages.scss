@@ -4,6 +4,7 @@
 
 .advantages__heading {
   margin-bottom: 40px;
+  font-family: $added-regular-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -17,8 +18,7 @@
 
 .advantages__item {
   margin-bottom: 24px;
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: $dark-grey-text;
+  color: $color-grey-700;
 }

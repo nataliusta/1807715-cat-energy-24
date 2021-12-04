@@ -1,17 +1,17 @@
+.slider {
+  background-color: $color-grey-200;
+}
+
 .slider__wrapper {
   margin: 0 auto;
 }
 
-.slider {
-  background-color: $dark-grey-base;
-}
-
 .slider__button {
-  font-family: $main-regular-font;
+  font-family: $added-regular-font;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   background-color: transparent;
   border: none;
   cursor: pointer;

@@ -10,28 +10,28 @@
 .additional__title {
   margin: 0;
   padding: 0;
+  font-family: $added-regular-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
 }
 
 .additional__product {
+  font-family: $added-regular-font;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: $special-dark-grey-text;
+  color: $color-grey-800;
   text-transform: uppercase;
 }
 
 .additional__text {
-  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
-  color: $dark-grey-text;
+  color: $color-grey-700;
 }
 
 .additional__price {
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-align: right;

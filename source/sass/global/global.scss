@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: $main-regular-font;
   font-style: normal;
-  background-color: $white-base;
+  background-color: $color-white;
   list-style-type: none;
   text-decoration: none;
 }
@@ -12,12 +12,4 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-.body-container {
-  margin: 0 auto;
-}
-
-.page-main {
-  margin: 0 auto;
 }

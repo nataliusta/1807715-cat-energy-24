@@ -1,10 +1,11 @@
 .button {
   display: block;
   padding: 10px 44px;
+  font-family: $added-regular-font;
   font-size: 16px;
   line-height: 20px;
-  color: $white-base;
-  background-color: $green-base;
+  color: $color-white;
+  background-color: $color-green;
   text-decoration: none;
   text-transform: uppercase;
   border: none;

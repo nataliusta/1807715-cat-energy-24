@@ -1,14 +1,14 @@
+.promo {
+  background: url("../img/index_background.jpg");
+  background-repeat: no-repeat;
+}
+
 .promo__wrapper {
   margin: 0 auto;
 }
 
-.promo {
-  width: 100%;
-  margin-bottom: 20px;
-  background: url("../img/index_background.jpg") no-repeat;
-}
-
 .promo__heading {
+  font-family: $added-regular-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -16,8 +16,12 @@
 }
 
 .promo__slogan-text {
+  margin: 0;
+  padding: 0;
+  font-family: $added-regular-font;
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
