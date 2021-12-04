@@ -1,0 +1,38 @@
+.additional__wrapper {
+  margin: 0 auto;
+}
+
+.additional__list {
+  margin: 0;
+  padding: 0;
+}
+
+.additional__title {
+  margin: 0;
+  padding: 0;
+  font-family: $added-regular-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.additional__product {
+  font-family: $added-regular-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-grey-800;
+  text-transform: uppercase;
+}
+
+.additional__text {
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-grey-700;
+}
+
+.additional__price {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+}

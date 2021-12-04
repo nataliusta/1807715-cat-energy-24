@@ -1,0 +1,33 @@
+.form-page__form {
+  font-family: $added-regular-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-grey-700;
+  text-transform: uppercase;
+}
+
+.form-group__input::placeholder {
+  font-family: $added-regular-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-grey-700;
+  text-transform: uppercase;
+}
+
+.form-page__input-button {
+  font-family: $main-regular-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.form-page__legend {
+  font-family: $main-regular-font;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-black;
+  text-transform: none;
+}

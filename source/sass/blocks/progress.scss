@@ -1,0 +1,44 @@
+.progress {
+  background-color: $color-grey-200;
+}
+
+.progress__wrapper {
+  margin: 0 auto;
+}
+
+.progress__heading {
+  margin: 0;
+  padding: 0;
+  font-family: $added-regular-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.progress__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.progress__number {
+  font-family: $added-regular-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.progress__text {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $color-grey-700;
+}
+
+.progress__total {
+  font-family: $added-regular-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

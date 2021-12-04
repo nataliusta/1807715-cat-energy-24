@@ -1,0 +1,15 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  font-family: $main-regular-font;
+  font-style: normal;
+  background-color: $color-white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
