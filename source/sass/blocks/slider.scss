@@ -4,6 +4,13 @@
 
 .slider__wrapper {
   margin: 0 auto;
+  padding: 40px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__wrapper {
+    padding: 0 250px;
+  }
 }
 
 .slider__button {

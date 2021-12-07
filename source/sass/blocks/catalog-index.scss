@@ -1,5 +1,18 @@
 .catalog-index__wrapper {
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-index__wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-index__wrapper {
+    padding: 0 110px;
+  }
 }
 
 .catalog-index__list {

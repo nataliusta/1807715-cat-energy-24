@@ -1,7 +1,3 @@
-.main-nav__wrapper {
-  margin: 0 auto;
-}
-
 .main-nav {
   font-family: $added-regular-font;
   font-size: 20px;
@@ -11,8 +7,23 @@
   text-transform: uppercase;
 }
 
+.main-nav__wrapper {
+  margin: 0 auto;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.main-nav__toggle {
+  width: 24px;
+  height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
