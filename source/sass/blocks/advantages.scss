@@ -11,7 +11,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages__wrapper {
-    padding: 0 110px;
+    padding: 0 50px;
   }
 }
 
@@ -42,7 +42,7 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 137px;
+    column-gap: 60px;
     row-gap: 37px;
   }
 }

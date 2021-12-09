@@ -1,16 +1,28 @@
 .specifications {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 2/3;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
 }
 
+@media (min-width: $tablet-width) {
+  .specifications {
+    row-gap: 14px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
 .specifications__title {
+  justify-self: start;
   margin: 0;
   padding: 0;
-  margin-bottom: 8px;
 }
 
 .specifications__description {
   margin: 0;
   padding: 0;
+  text-align: end;
 }

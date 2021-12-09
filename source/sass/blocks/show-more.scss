@@ -1,6 +1,7 @@
 .show-more__title {
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
   font-family: $added-regular-font;
   font-size: 16px;
   line-height: 20px;
@@ -11,6 +12,7 @@
 }
 
 .show-more__text {
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
   color: $color-grey-700;
@@ -21,6 +23,7 @@
   font-family: $added-regular-font;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: $color-grey-700;
   background-color: $color-grey-100;
 }

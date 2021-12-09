@@ -19,13 +19,20 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding: 58px 110px;
+    padding: 58px 50px;
     width: 1220px;
   }
 }
 
 .page-footer__logo {
   padding: 0 75px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    margin-right: 100px;
+    padding: 0;
+  }
 }
 
 .page-footer__logo-image {
@@ -37,6 +44,5 @@
 @media (min-width: $tablet-width) {
   .page-footer__logo-image {
     margin: 0;
-    align-items: center;
   }
 }

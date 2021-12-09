@@ -1,13 +1,42 @@
 .main-page__wrapper {
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-page__wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page__wrapper {
+    padding: 0 50px;
+  }
 }
 
 .main-page__heading {
+  margin: 0;
+  padding: 0;
   margin-bottom: 49px;
   font-family: $added-regular-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .main-page__heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-page__heading {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-page__text {
