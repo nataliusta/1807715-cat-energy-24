@@ -1,4 +1,5 @@
 .copyright__text {
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   color: $color-grey-700;
@@ -6,5 +7,15 @@
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    width: 163px;
+  }
 }

@@ -1,13 +1,40 @@
 .promo {
+  color: $color-white;
   background: url("../img/index_background.jpg");
   background-repeat: no-repeat;
 }
 
+@media (min-width: $tablet-width) {
+  .promo {
+    background: none;
+  }
+}
+
 .promo__wrapper {
-  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    display: grid;
+    grid-template-rows: 120px 55px 50px;
+    row-gap: 20px;
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    margin-bottom: 176px;
+    padding-left: 150px;
+    padding-right: 300px;
+  }
 }
 
 .promo__heading {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
   font-family: $added-regular-font;
   font-size: 36px;
   line-height: 36px;
@@ -15,9 +42,26 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .promo__heading {
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-black;
+    text-align: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__heading {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
 .promo__slogan-text {
   margin: 0;
   padding: 0;
+  margin-bottom: 29px;
   font-family: $added-regular-font;
   font-size: 14px;
   line-height: 14px;
@@ -26,7 +70,62 @@
   text-align: center;
 }
 
-.promo__button {
-  font-size: 16px;
-  line-height: 20px;
+@media (min-width: $tablet-width) {
+  .promo__slogan-text {
+    margin: 0;
+    align-self: center;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-black;
+    text-align: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__slogan-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: end;
+  }
+}
+
+.promo__image {
+  width: 280px;
+  height: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__image {
+    order: 2;
+    margin-top: -20px;
+    margin-left: 20px;
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__image {
+    margin-top: -40px;
+    grid-column: 2/3;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__button {
+    justify-self: start;
+    align-self: start;
+    width: 244px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__button {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: start;
+    align-self: start;
+  }
 }

@@ -1,3 +1,18 @@
 .page-header {
-  padding: 10px 20px 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding: 24px 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 53px 50px;
+    max-width: $desktop-width;
+  }
 }

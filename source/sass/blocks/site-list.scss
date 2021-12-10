@@ -1,3 +1,15 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 22px;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
+}
+
 .site-list__item {
   font-family: $added-regular-font;
   font-size: 20px;
