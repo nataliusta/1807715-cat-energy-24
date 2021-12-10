@@ -1,4 +1,7 @@
 .form-group {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
   border: none;
 }
 
@@ -13,7 +16,21 @@
   text-transform: none;
 }
 
+.form-group__label {
+  align-self: center;
+  margin-right: 13px;
+}
+
+.form-group__field-group {
+  display: flex;
+}
+
 .form-group__input {
+  width: 100%;
   padding: 10px;
+}
+
+.form-group__textarea {
+  margin: 0 auto;
 }
 
