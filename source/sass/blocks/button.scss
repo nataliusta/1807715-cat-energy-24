@@ -4,9 +4,19 @@
   font-family: $added-regular-font;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   color: $color-white;
   background-color: $color-green;
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--large {
+      font-size: 20px;
+      padding: 13px 26px;
+    }
+  }
 }

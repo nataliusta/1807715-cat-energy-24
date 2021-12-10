@@ -3,20 +3,17 @@
 }
 
 .progress__wrapper {
-  margin: 0 auto;
   padding: 25px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .progress__wrapper {
-    padding: 0 30px;
     background-color: $color-white;
   }
 }
 
 @media (min-width: $desktop-width) {
   .progress__wrapper {
-    padding: 0 50px;
     background-color: $color-white;
   }
 }
