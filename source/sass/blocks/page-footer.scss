@@ -3,29 +3,26 @@
 }
 
 .page-footer__wrapper {
-  margin: 0 auto;
   padding: 39px 20px 22px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 56px 30px;
-    width: 708px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding: 58px 110px;
-    width: 1220px;
+    padding: 58px 50px;
   }
 }
 
 .page-footer__logo {
-  padding: 0 75px;
+  padding: 0;
 }
 
 .page-footer__logo-image {

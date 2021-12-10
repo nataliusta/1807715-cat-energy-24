@@ -12,6 +12,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding: 53px 110px;
+    padding: 53px 50px;
+    max-width: $desktop-width;
   }
 }
