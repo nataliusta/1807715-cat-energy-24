@@ -12,10 +12,35 @@
   text-transform: none;
 }
 
+@media (min-width: $tablet-width) {
+  .form-options__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .form-options__checkbox-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-options__checkbox-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 45px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-options__checkbox-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 90px;
+  }
 }
 
 .form-options__item {

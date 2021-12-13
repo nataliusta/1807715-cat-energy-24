@@ -1,3 +1,10 @@
+@media (min-width: $desktop-width) {
+  .additional__wrapper {
+    display: flex;
+    padding: 0 80px;
+  }
+}
+
 .additional__list {
   margin: 0;
   padding: 0;
@@ -12,9 +19,20 @@
   padding-bottom: 18px;
 }
 
+@media (min-width: $desktop-width) {
+  .additional__card {
+    grid-template-columns: 244px 200px 44px 244px;
+    grid-template-rows: 72px;
+    column-gap: 38px;
+    padding: 0;
+    width: 896px;
+    align-items: center;
+  }
+}
+
 .additional__title {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   margin-bottom: 45px;
   font-family: $added-regular-font;
   font-size: 24px;
@@ -24,6 +42,8 @@
 
 @media (min-width: $tablet-width) {
   .additional__title {
+    margin-bottom: 80px;
+    padding-left: 80px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -66,6 +86,14 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .additional__text {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+  }
+}
+
 .additional__price {
   font-size: 14px;
   line-height: 14px;
@@ -81,7 +109,21 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .additional__price {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
 .additional__button {
   grid-column: 1/-1;
   text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .additional__button {
+    grid-column: 4/5;
+    align-self: center;
+  }
 }

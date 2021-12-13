@@ -10,13 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .main-page__heading {
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-page__heading {
+    margin-bottom: 82px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -30,4 +24,13 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .main-page__text {
+    margin-bottom: 66px;
+    padding-right: 330px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
