@@ -3,9 +3,41 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog-page__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 60px;
+    margin-bottom: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-page__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    margin-bottom: 76px;
+  }
+}
+
 .catalog-page__card {
-  margin-bottom: 19px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 41px 44px 40px;
+  row-gap: 20px;
   padding: 11px 0;
+  border-top: 1px solid $color-grey-300;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page__card {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 36px;
+    background-color: $color-grey-100;
+    border: none;
+  }
 }
 
 .catalog-page__image-link {
@@ -13,14 +45,37 @@
   object-fit: cover;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog-page__image-link {
+    margin: 0 auto;
+  }
+}
+
 .catalog-page__card-title {
   margin: 0;
   padding: 0;
+  padding-right: 50px;
   font-family: $added-regular-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page__card-title {
+    padding: 0 55px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-page__card-title {
+    padding: 0 25px;
+    line-height: 21px;
+  }
 }
 
 .catalog-page__title-link {
@@ -31,4 +86,28 @@
 .catalog-page__specifications {
   margin: 0;
   padding: 0;
+}
+
+.catalog-page__button {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.catalog-page__show-more {
+  padding-top: 75px;
+  padding-bottom: 25px;
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page__show-more {
+    display: grid;
+    grid-template-rows: 1fr 1fr 40px;
+    row-gap: 20px;
+    padding-top: 80px;
+    padding-right: 36px;
+    padding-left: 36px;
+    padding-bottom: 40px;
+    border: 2px solid $color-grey-100;
+  }
 }

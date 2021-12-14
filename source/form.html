@@ -21,7 +21,7 @@
       <div class="main-nav__wrapper wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__item" href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
@@ -50,56 +50,58 @@
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <form class="form-page__form order-form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="order-form__group form-group form-group--cat-info">
-            <legend class="visually-hidden">Информация о Вашем коте:</legend>
-            <p class="form-group__field-group">
-              <label class="form-group__label" for="name">Имя:*</label>
-              <input class="form-group__input" type="text" id="name" name="name" placeholder="Барсик" required>
-            </p>
-            <p class="form-group__field-group">
-              <label class="form-group__label" for="weight">Вес (кг):*</label>
-              <input class="form-group__input" type="text" id="weight" name="weight" placeholder="7" required>
-            </p>
-            <p class="form-group__field-group">
-              <label class="form-group__label" for="age">Возраст (лет):</label>
-              <input class="form-group__input" type="text" id="age" name="age" placeholder="7">
-            </p>
-          </fieldset>
+          <div class="form-page__form--container">
+            <fieldset class="order-form__group form-group form-group--cat-info">
+              <legend class="visually-hidden">Информация о Вашем коте:</legend>
+              <p class="form-group__field">
+                <label class="form-group__label" for="name">Имя:*</label>
+                <input class="form-group__input" type="text" id="name" name="name" placeholder="Барсик" required>
+              </p>
+              <p class="form-group__field">
+                <label class="form-group__label" for="weight">Вес (кг):*</label>
+                <input class="form-group__input" type="text" id="weight" name="weight" placeholder="7" required>
+              </p>
+              <p class="form-group__field">
+                <label class="form-group__label" for="age">Возраст (лет):</label>
+                <input class="form-group__input" type="text" id="age" name="age" placeholder="7">
+              </p>
+            </fieldset>
 
-          <fieldset class="order-form__group form-program">
-            <legend class="visually-hidden">Программа:</legend>
-            <ul class="form-program__radio-list">
-              <li class="form-program__item">
-                <label class="form-program__field radio">
-                  <input class="radio__input" type="radio" name="program" value="loosing-weight" checked>
-                  <span class="radio__text">Похудение</span>
-                </label>
-              </li>
-              <li class="form-program__item">
-                <label class="form-program__field radio">
-                  <input class="radio__input" type="radio" name="program" value="weight-gain">
-                  <span class="radio__text">Набор массы</span>
-                </label>
-              </li>
-              <li class="form-program__item">
-                <label class="form-program__field radio">
-                  <input class="radio__input" type="radio" name="program" value="advice">
-                  <span class="radio__text">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="order-form__group form-program">
+              <legend class="visually-hidden">Программа:</legend>
+              <ul class="form-program__radio-list">
+                <li class="form-program__item">
+                  <label class="form-program__field radio">
+                    <input class="radio__input" type="radio" name="program" value="loosing-weight" checked>
+                    <span class="radio__text">Похудение</span>
+                  </label>
+                </li>
+                <li class="form-program__item">
+                  <label class="form-program__field radio">
+                    <input class="radio__input" type="radio" name="program" value="weight-gain">
+                    <span class="radio__text">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form-program__item">
+                  <label class="form-program__field radio">
+                    <input class="radio__input" type="radio" name="program" value="advice">
+                    <span class="radio__text">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="order-form__group form-group form-group--contacts">
             <legend class="form-group__legend">Контактные данные (владельца кота):</legend>
-            <p class="form-group__email">
+            <p class="form-group__field">
               <label class="form-group__label" for="email">
                 E-mail:*
               </label>
               <input class="form-group__input" type="email" placeholder="kuklachev@gmail.com" id="email"
                 name="form-page__email" required>
             </p>
-            <p class="form-group__phone">
+            <p class="form-group__field">
               <label class="form-group__label" for="phone">
                 Телефон:*
               </label>
@@ -108,12 +110,10 @@
             </p>
           </fieldset>
 
-          <fieldset class="order-form__group form-group">
+          <fieldset class="order-form__group form-group form-group--textarea">
             <legend class="visually-hidden">Оставьте комментарий</legend>
-            <label class="form-group__label" for="comment-field">Комментарий</label>
-            <textarea name="form-group__textarea" id="comment-field" rows="8">
-              Расскажите обо всех повадках кота
-            </textarea>
+            <label class="form-group__label form-group__label--textarea" for="comment-field">Комментарий</label>
+            <textarea class="form-group__input" name="text" id="comment-field" rows="8">Расскажите обо всех повадках кота</textarea>
           </fieldset>
 
           <fieldset class="order-form__group form-options">
@@ -145,11 +145,12 @@
               </li>
             </ul>
           </fieldset>
-
-          <input class="form-page__input-button button button--large" type="submit" value="Отправить заявку">
-          <small class="form-page__legend">
-            * — Обязательные поля
-          </small>
+          <div class="form-page__container">
+            <input class="form-page__input-button button button--large" type="button" value="Отправить заявку">
+            <small class="form-page__legend">
+              * — Обязательные поля
+            </small>
+          </div>
         </form>
       </div>
     </section>

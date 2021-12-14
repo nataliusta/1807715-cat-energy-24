@@ -3,6 +3,12 @@
   background-repeat: no-repeat;
 }
 
+@media (min-width: $desktop-width) {
+  .gift {
+    padding: 0;
+  }
+}
+
 .gift__text {
   margin: 0;
   padding: 0;

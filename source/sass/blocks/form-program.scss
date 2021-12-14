@@ -1,6 +1,18 @@
+.form-program {
+  padding: 0;
+  border: none;
+}
+
 .form-program__radio-list {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form-program__radio-list {
+    padding: 25px 28px;
+    border: 1px solid $color-grey-400;
+  }
 }
 
 .form-program__item {

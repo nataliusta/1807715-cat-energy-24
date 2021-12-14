@@ -25,6 +25,13 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    margin-right: 100px;
+    padding: 0;
+  }
+}
+
 .page-footer__logo-image {
   margin-bottom: 52px;
   width: 128px;
@@ -34,6 +41,5 @@
 @media (min-width: $tablet-width) {
   .page-footer__logo-image {
     margin: 0;
-    align-items: center;
   }
 }

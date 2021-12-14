@@ -1,3 +1,19 @@
+.form-group {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+  border: none;
+}
+
+@media (min-width: $desktop-width) {
+  .form-group--contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+    width: 100%;
+  }
+}
+
 .form-group__legend {
   margin: 0;
   padding: 0;
@@ -9,6 +25,66 @@
   text-transform: none;
 }
 
+@media (min-width: $tablet-width) {
+  .form-group__legend {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.form-group__label {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  align-self: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-group__label {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--textarea {
+      font-size: 36px;
+      line-height: 36px;
+      text-transform: none;
+    }
+  }
+}
+
+.form-group__field {
+  display: flex;
+}
+
 .form-group__input {
+  flex-grow: 1;
   padding: 10px;
+  font-family: $added-regular-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-grey-700;
+  border: 1px solid $color-grey-500;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-group__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-group--textarea {
+  display: grid;
+  row-gap: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-group--textarea {
+    row-gap: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
