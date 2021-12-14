@@ -10,13 +10,8 @@
 
 @media (min-width: $tablet-width) {
   .form-program__radio-list {
-    padding: 100px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form-program__radio-list {
-    padding: 0;
+    padding: 25px 28px;
+    border: 1px solid $color-grey-400;
   }
 }
 

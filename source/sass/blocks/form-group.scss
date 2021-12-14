@@ -33,9 +33,9 @@
 }
 
 .form-group__label {
-  margin-right: 13px;
-  font-size: 24px;
-  line-height: 26px;
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 18px;
   align-self: center;
   text-transform: uppercase;
 }
@@ -53,13 +53,27 @@
   }
 }
 
-.form-group__field-group {
+.form-group__field {
   display: flex;
 }
 
 .form-group__input {
-  width: 100%;
+  flex-grow: 1;
   padding: 10px;
+  font-family: $added-regular-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-grey-700;
+  border: 1px solid $color-grey-500;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .form-group__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-group--textarea {

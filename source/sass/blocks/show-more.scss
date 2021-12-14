@@ -11,7 +11,24 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .show-more__title {
+    align-self: end;
+    margin: 0;
+    padding: 0 38px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__title {
+    padding: 0 32px;
+  }
+}
+
 .show-more__text {
+  margin: 0;
   margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
@@ -19,7 +36,30 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .show-more__text {
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__text {
+    padding: 0 10px;
+  }
+}
+
 .show-more__button {
   color: $color-grey-700;
   background-color: $color-grey-100;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more__button {
+    justify-self: stretch;
+  }
 }

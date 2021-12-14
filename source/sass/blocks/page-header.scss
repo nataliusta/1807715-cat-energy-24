@@ -1,7 +1,9 @@
 .page-header {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   padding: 10px 20px 18px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {

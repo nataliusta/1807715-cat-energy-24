@@ -1,7 +1,10 @@
 @media (min-width: $desktop-width) {
   .additional__wrapper {
-    display: flex;
-    padding: 0 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: start;
+    column-gap: 80px;
+    margin-bottom: 86px;
   }
 }
 
@@ -9,6 +12,12 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: $desktop-width) {
+  .additional__list {
+    grid-column: 1/4;
+  }
 }
 
 .additional__card {
@@ -19,20 +28,31 @@
   padding-bottom: 18px;
 }
 
+@media (min-width: $tablet-width) {
+  .additional__card {
+    padding: 26px 38px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .additional__card {
-    grid-template-columns: 244px 200px 44px 244px;
+    grid-template-columns: 1fr 1fr max-content 244px;
     grid-template-rows: 72px;
-    column-gap: 38px;
+    column-gap: 30px;
     padding: 0;
-    width: 896px;
     align-items: center;
+    justify-self: start;
+    border-top: 1px solid $color-grey-500;
+
+    &:last-child {
+      border-bottom: 1px solid $color-grey-500;
+    }
   }
 }
 
 .additional__title {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   margin-bottom: 45px;
   font-family: $added-regular-font;
   font-size: 24px;
@@ -43,9 +63,18 @@
 @media (min-width: $tablet-width) {
   .additional__title {
     margin-bottom: 80px;
-    padding-left: 80px;
+    padding-left: 27px;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional__title {
+    grid-column: 1/3;
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
   }
 }
 
@@ -90,7 +119,7 @@
   .additional__text {
     grid-column: 2/3;
     grid-row: 1/2;
-    justify-self: start;
+    text-align: start;
   }
 }
 
