@@ -18,3 +18,12 @@
     max-width: $desktop-width;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    display: flex;
+    justify-content: space-between;
+    width: 202px;
+    height: 59px;
+  }
+}
