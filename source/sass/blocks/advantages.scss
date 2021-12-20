@@ -23,17 +23,20 @@
 
 @media (min-width: $tablet-width) {
   .advantages__list {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 37px;
+    counter-reset: section;
+    z-index: 2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 76px;
+    column-gap: 46px;
   }
 }
 
@@ -48,90 +51,64 @@
   color: $color-grey-700;
 
   &--leaf::before {
-    position: absolute;
-    left: -5px;
-    content: "";
-    width: 60px;
-    height: 60px;
+    @include advantages-pseudo();
     background-image: url("../img/icons/icon-leaf.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-color: $color-green;
   }
 
   &--tub::before {
-    position: absolute;
-    left: -5px;
-    content: "";
-    width: 60px;
-    height: 60px;
+    @include advantages-pseudo();
     background-image: url("../img/icons/icon_tub.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-color: $color-green;
   }
 
   &--eat::before {
-    position: absolute;
-    left: -5px;
-    content: "";
-    width: 60px;
-    height: 60px;
+    @include advantages-pseudo();
     background-image: url("../img/icons/icon_eat.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-color: $color-green;
   }
 
   &--alarm::before {
-    position: absolute;
-    left: -5px;
-    content: "";
-    width: 60px;
-    height: 60px;
+    @include advantages-pseudo();
     background-image: url("../img/icons/icon_alarm.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-color: $color-green;
   }
 }
 
 @media (min-width: $tablet-width) {
   .advantages__item {
+    position: relative;
     margin: 0;
     padding-top: 100px;
-    padding-right: 60px;
+    padding-right: 55px;
     padding-left: 0;
     padding-bottom: 57px;
+    margin-bottom: 37px;
     font-size: 16px;
     line-height: 24px;
 
+    &::after {
+      position: absolute;
+      top: -40px;
+      right: 70px;
+      counter-increment: section;
+      content: "" counter(section);
+      font-family: $added-regular-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $color-grey-100;
+    }
+
     &--leaf::before {
-      top: 0;
-      left: 0;
-      width: 80px;
-      height: 80px;
+      @include advantages-before();
     }
 
     &--tub::before {
-      top: 0;
-      left: 0;
-      width: 80px;
-      height: 80px;
+      @include advantages-before();
     }
 
     &--eat::before {
-      top: 0;
-      left: 0;
-      width: 80px;
-      height: 80px;
+      @include advantages-before();
     }
 
     &--alarm::before {
-      top: 0;
-      left: 0;
-      width: 80px;
-      height: 80px;
+      @include advantages-before();
     }
   }
 }
