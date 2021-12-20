@@ -1,12 +1,30 @@
 .promo {
+  position: relative;
+  padding-top: 27px;
   color: $color-white;
   background: url("../img/index_background.jpg");
   background-repeat: no-repeat;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 320px;
+    height: 302px;
+    top: 0;
+    left: 0;
+    background: url("../img/background_green.png");
+    opacity: 0.9;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .promo {
     background: none;
+
+    &::after {
+      background: none;
+    }
   }
 }
 
@@ -32,6 +50,8 @@
 }
 
 .promo__heading {
+  position: relative;
+  z-index: 2;
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
@@ -59,6 +79,8 @@
 }
 
 .promo__slogan-text {
+  position: relative;
+  z-index: 2;
   margin: 0;
   padding: 0;
   margin-bottom: 29px;
@@ -90,6 +112,8 @@
 }
 
 .promo__image {
+  position: relative;
+  z-index: 2;
   width: 280px;
   height: 270px;
 }
