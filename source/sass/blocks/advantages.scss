@@ -51,24 +51,31 @@
   color: $color-grey-700;
 
   &--leaf::before {
-    @include advantages-pseudo();
     background-image: url("../img/icons/icon-leaf.svg");
   }
 
   &--tub::before {
-    @include advantages-pseudo();
     background-image: url("../img/icons/icon_tub.svg");
   }
 
   &--eat::before {
-    @include advantages-pseudo();
     background-image: url("../img/icons/icon_eat.svg");
   }
 
   &--alarm::before {
-    @include advantages-pseudo();
     background-image: url("../img/icons/icon_alarm.svg");
   }
+}
+
+.advantages__item::before {
+  position: absolute;
+  content: "";
+  left: -5px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-color: $color-gree;
 }
 
 @media (min-width: $tablet-width) {

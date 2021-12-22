@@ -39,22 +39,6 @@
       </div>
     </nav>
   </header>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
 
   <main class="page-main">
     <section class="promo">
@@ -75,7 +59,7 @@
       <div class="catalog-index__wrapper wrapper">
         <h2 class="visually-hidden">Программы для ваших котов</h2>
         <ul class="catalog-index__list catalog-list">
-          <li class="catalog-list__item">
+          <li class="catalog-list__item catalog-list__item--cat">
             <h3 class="catalog-list__title">
               Похудение
             </h3>
@@ -89,7 +73,7 @@
               </span>
             </a>
           </li>
-          <li class="catalog-list__item">
+          <li class="catalog-list__item catalog-list__item--pantera">
             <h3 class="catalog-list__title">
               Набор массы
             </h3>
@@ -128,34 +112,34 @@
     </section>
 
     <section class="progress">
-        <div class="progress__wrapper wrapper">
-          <h2 class="progress__heading">Живой пример</h2>
-          <p class="progress__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок!
-            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <dl class="progress__list">
-            <div class="progress__item">
-              <dt class="progress__number">
-                5 кг
-              </dt>
-              <dd class="progress__text">
-                снижение веса
-              </dd>
-            </div>
-            <div class="progress__item">
-              <dt class="progress__number">
-                60 дней
-              </dt>
-              <dd class="progress__text">
-                затрачено времени
-              </dd>
-            </div>
-          </dl>
-          <p class="progress__total">
-            Затраты на питание: 15 000 РУБ.
-          </p>
-        </div>
+      <div class="progress__wrapper wrapper">
+        <h2 class="progress__heading">Живой пример</h2>
+        <p class="progress__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок!
+          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <dl class="progress__list">
+          <div class="progress__item">
+            <dt class="progress__number">
+              5 кг
+            </dt>
+            <dd class="progress__text">
+              снижение веса
+            </dd>
+          </div>
+          <div class="progress__item">
+            <dt class="progress__number">
+              60 дней
+            </dt>
+            <dd class="progress__text">
+              затрачено времени
+            </dd>
+          </div>
+        </dl>
+        <p class="progress__total">
+          Затраты на питание: 15 000 РУБ.
+        </p>
+      </div>
     </section>
 
     <section class="slider">
@@ -267,6 +251,7 @@
       </div>
     </section>
   </footer>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

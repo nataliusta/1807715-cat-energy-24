@@ -13,27 +13,26 @@
   background-color: $color-grey-100;
   text-align: start;
 
-  &:nth-child(1)::before {
-    position: absolute;
-    top: 15px;
+  &--cat::before {
     left: 25px;
-    content: "";
     width: 50px;
     height: 53px;
     background-image: url("../img/icons/icon_cat_black.svg");
-    background-repeat: no-repeat;
   }
 
-  &:nth-child(2)::before {
-    position: absolute;
-    top: 15px;
+  &--pantera::before {
     left: 13px;
-    content: "";
     width: 67px;
     height: 50px;
     background-image: url("../img/icons/icon_pantera.svg");
-    background-repeat: no-repeat;
   }
+}
+
+.catalog-list__item::before {
+  position: absolute;
+  top: 15px;
+  content: "";
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet-width) {
@@ -44,7 +43,7 @@
     margin-bottom: 30px;
     padding: 77px 62px 53px 53px;
 
-    &:nth-child(1)::before {
+    &--cat::before {
       top: 70px;
       left: 440px;
       right: 62px;
@@ -53,7 +52,7 @@
       background-size: cover;
     }
 
-    &:nth-child(2)::before {
+    &--pantera::before {
       top: 70px;
       left: 420px;
       width: 268px;
@@ -68,14 +67,14 @@
     display: block;
     padding: 77px 84px 55px 52px;
 
-    &:nth-child(1)::before {
+    &--cat::before {
       top: 40px;
       left: 52px;
       width: 100px;
       height: 106px;
     }
 
-    &:nth-child(2)::before {
+    &--pantera::before {
       top: 46px;
       left: 33px;
       width: 134px;
