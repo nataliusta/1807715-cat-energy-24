@@ -1,11 +1,6 @@
-.site-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 @media (min-width: $tablet-width) {
   .site-list {
+    display: flex;
     flex-direction: row;
   }
 }
@@ -31,7 +26,6 @@
   .site-list__item {
     font-size: 20px;
     line-height: 30px;
-    border: none;
   }
 }
 
@@ -51,7 +45,7 @@
 .site-list__link {
   position: relative;
   display: block;
-  padding: 22px 20px;
+  padding: 20px;
   color: $color-black;
   background-color: $color-white;
   text-decoration: none;
@@ -60,8 +54,6 @@
 
 @media (min-width: $tablet-width) {
   .site-list__link {
-    display: flex;
-    flex-direction: row;
     padding: 10px;
   }
 }

@@ -14,7 +14,8 @@
 
 @media (min-width: $desktop-width) {
   .progress__wrapper {
-    background-color: $color-white;
+    padding: 0 50px;
+    background: linear-gradient(to top, $color-grey-200 75%, $color-white 25%);
   }
 }
 
@@ -38,8 +39,8 @@
 
 @media (min-width: $desktop-width) {
   .progress__heading {
-    margin-bottom: 76px;
-    background-color: $color-white;
+    margin-bottom: 146px;
+    padding-top: 30px;
   }
 }
 
@@ -84,4 +85,21 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .progress__total {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .progress__total {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: start;
+  }
 }

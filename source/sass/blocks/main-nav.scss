@@ -18,7 +18,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 5px;
-  right: -2px;
+  right: -6px;
   z-index: 2;
   width: 35px;
   height: 25px;
@@ -36,8 +36,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 8px;
+  top: 6px;
+  left: 6px;
   width: 24px;
   height: 2px;
   background-color: $color-black;
@@ -69,17 +69,11 @@
 
 .main-nav--nojs .main-nav__wrapper {
   position: static;
-  min-height: 0;
+  padding: 0;
 }
 
 .main-nav--nojs .site-list__item {
   display: block;
-}
-
-.main-nav--nojs .site-list__item--current a {
-  padding-right: 21px;
-  padding-left: 21px;
-  text-align: center;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -91,7 +85,7 @@
     content: "";
     position: absolute;
     top: 12px;
-    right: 2px;
+    left: 4px;
     width: 30px;
     height: 2px;
     background-color: $color-black;

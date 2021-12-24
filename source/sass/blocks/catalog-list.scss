@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    padding: 0 60px;
   }
 }
 
@@ -13,50 +14,74 @@
   background-color: $color-grey-100;
   text-align: start;
 
-  &--cat::before {
+  &::before {
+    position: absolute;
+    content: "";
     left: 25px;
     width: 50px;
-    height: 53px;
-    background-image: url("../img/icons/icon_cat_black.svg");
-  }
-
-  &--pantera::before {
-    left: 13px;
-    width: 67px;
     height: 50px;
-    background-image: url("../img/icons/icon_pantera.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: $color-green;
+    border-radius: 50%;
   }
-}
 
-.catalog-list__item::before {
-  position: absolute;
-  top: 15px;
-  content: "";
-  background-repeat: no-repeat;
+  &--cat::after {
+    position: absolute;
+    content: "";
+    top: 18px;
+    left: 32px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../img/icons/icon_blackcatt.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+
+  &--pantera::after {
+    position: absolute;
+    content: "";
+    top: 32px;
+    left: 16px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icons/icon_pantera.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .catalog-list__item {
     display: grid;
-    grid-template-columns: 350px 1fr;
-    column-gap: 20px;
+    grid-template-columns: 1fr 200px;
+    column-gap: 50px;
     margin-bottom: 30px;
     padding: 77px 62px 53px 53px;
 
-    &--cat::before {
-      top: 70px;
-      left: 440px;
+    &::before {
+      top: 92px;
       right: 62px;
+      left: auto;
       width: 200px;
-      height: 211px;
+      height: 200px;
+    }
+
+    &--cat::after {
+      top: 81px;
+      right: 90px;
+      left: auto;
+      width: 140px;
+      height: 194px;
       background-size: cover;
     }
 
-    &--pantera::before {
-      top: 70px;
-      left: 420px;
+    &--pantera::after {
+      top: 140px;
+      right: 30px;
+      left: auto;
       width: 268px;
-      height: 200px;
+      height: 112px;
       background-size: cover;
     }
   }
@@ -65,20 +90,27 @@
 @media (min-width: $desktop-width) {
   .catalog-list__item {
     display: block;
-    padding: 77px 84px 55px 52px;
+    padding: 77px 52px 55px 52px;
 
-    &--cat::before {
-      top: 40px;
+    &::before {
+      top: 47px;
       left: 52px;
       width: 100px;
-      height: 106px;
+      height: 100px;
     }
 
-    &--pantera::before {
-      top: 46px;
+    &--cat::after {
+      top: 41px;
+      left: 67px;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--pantera::after {
+      top: 67px;
       left: 33px;
       width: 134px;
-      height: 100px;
+      height: 56px;
     }
   }
 }
@@ -86,19 +118,19 @@
 .catalog-list__title {
   margin: 0;
   padding: 0;
-  padding-left: 25px;
+  padding-top: 6px;
+  padding-left: 75px;
+  padding-right: 20px;
   margin-bottom: 29px;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
   .catalog-list__title {
-    padding: 0;
     font-size: 36px;
     line-height: 36px;
     text-align: start;
@@ -108,11 +140,14 @@
 @media (min-width: $desktop-width) {
   .catalog-list__title {
     margin-bottom: 72px;
+    padding-left: 130px;
+    padding-right: 92px;
     text-align: center;
   }
 }
 
 .catalog-list__text {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-bottom: 38px;
@@ -120,6 +155,17 @@
   line-height: 18px;
   color: $color-grey-700;
   text-align: start;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: $color-grey-600;
+    width: 20px;
+    height: 2px;
+    bottom: -10px;
+    left: 10px;
+    right: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -139,6 +185,7 @@
 .catalog-list__link {
   position: relative;
   margin-right: 0;
+  padding-right: 50px;
   font-family: $added-regular-font;
   font-size: 16px;
   line-height: 16px;
@@ -150,7 +197,8 @@
   &::after {
     position: absolute;
     content: "";
-    left: 98px;
+    top: calc(50% - 5px);
+    right: 0;
     width: 32px;
     height: 10px;
     background-image: url("../img/icons/icon-right.svg");
@@ -161,12 +209,8 @@
 @media (min-width: $tablet-width) {
   .catalog-list__link {
     grid-column: 1/2;
+    justify-self: start;
     font-size: 20px;
     line-height: 30px;
-
-    &::after {
-      top: 10px;
-      left: 130px;
-    }
   }
 }

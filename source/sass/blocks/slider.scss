@@ -8,13 +8,22 @@
 
 @media (min-width: $tablet-width) {
   .slider__wrapper {
-    padding: 0 250px;
+    padding: 0 100px;
+    background: linear-gradient(to top, $color-grey-200 78%, $color-white 22%);
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__wrapper {
-    padding: 0 560px;
+    padding: 0 200px;
+    background-color: $color-white;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__image {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
