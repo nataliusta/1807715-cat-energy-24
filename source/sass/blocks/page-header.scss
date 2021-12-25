@@ -6,6 +6,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    display: flex;
+    justify-content: space-between;
     padding: 24px 30px;
   }
 }

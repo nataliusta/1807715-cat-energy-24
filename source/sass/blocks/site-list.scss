@@ -32,13 +32,20 @@
 @media (min-width: $tablet-width) {
   .site-list__item--current::after {
     position: absolute;
-    right: 12px;
-    bottom: -6px;
-    left: 12px;
+    right: 11px;
+    left: 11px;
+    bottom: 0;
     height: 2px;
     background-color: $color-green;
     content: "";
     border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item--current-white::after {
+    z-index: 1;
+    background-color: $color-white;
   }
 }
 
@@ -54,6 +61,16 @@
 
 @media (min-width: $tablet-width) {
   .site-list__link {
-    padding: 10px;
+    padding: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    &--white {
+      color: $color-white;
+      background-color: transparent;
+      z-index: 1;
+    }
   }
 }
