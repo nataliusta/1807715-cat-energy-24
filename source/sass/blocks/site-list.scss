@@ -5,6 +5,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list {
+    padding-right: 55px;
+  }
+}
+
 .site-list__item {
   position: relative;
   font-family: $added-regular-font;

@@ -2,6 +2,12 @@
   padding-bottom: 25px;
 }
 
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    padding: 0 50px;
+  }
+}
+
 .advantages__heading {
   margin: 0;
   padding: 0;
@@ -22,6 +28,7 @@
 @media (min-width: $desktop-width) {
   .advantages__heading {
     margin-bottom: 82px;
+    padding-left: 50px;
   }
 }
 
@@ -46,6 +53,7 @@
   .advantages__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 46px;
+    padding: 0 50px;
   }
 }
 
