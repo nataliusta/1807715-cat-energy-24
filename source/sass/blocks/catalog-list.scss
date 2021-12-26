@@ -26,28 +26,28 @@
     border-radius: 50%;
   }
 
-  &--cat::after {
+  &::after {
     position: absolute;
     content: "";
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+
+  &--cat::after {
     top: 18px;
     left: 32px;
     width: 36px;
     height: 50px;
     background-image: url("../img/icons/icon_blackcatt.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
   }
 
   &--pantera::after {
-    position: absolute;
-    content: "";
     top: 32px;
     left: 16px;
     width: 67px;
     height: 28px;
     background-image: url("../img/icons/icon_pantera.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
   }
 }
 
@@ -73,7 +73,6 @@
       left: auto;
       width: 140px;
       height: 194px;
-      background-size: cover;
     }
 
     &--pantera::after {
@@ -82,7 +81,6 @@
       left: auto;
       width: 268px;
       height: 112px;
-      background-size: cover;
     }
   }
 }

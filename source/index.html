@@ -111,61 +111,63 @@
       </div>
     </section>
 
-    <div class="container">
-      <section class="progress">
+    <section class="progress">
+      <div class="progress__container">
         <div class="progress__wrapper wrapper">
           <h2 class="progress__heading">Живой пример</h2>
           <p class="progress__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
             Отличный результат без изнуряющих тренировок!
             При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <dl class="progress__list">
-            <div class="progress__item">
-              <dt class="progress__number">
-                5 кг
-              </dt>
-              <dd class="progress__text">
-                снижение веса
-              </dd>
-            </div>
-            <div class="progress__item">
-              <dt class="progress__number">
-                60 дней
-              </dt>
-              <dd class="progress__text">
-                затрачено времени
-              </dd>
-            </div>
-          </dl>
-          <p class="progress__total">
-            Затраты на питание:
-            <span>
-              15 000 РУБ.
-            </span>
-          </p>
+          <div class="progress__list-container">
+            <dl class="progress__list">
+              <div class="progress__item">
+                <dt class="progress__number">
+                  5 кг
+                </dt>
+                <dd class="progress__text">
+                  снижение веса
+                </dd>
+              </div>
+              <div class="progress__item">
+                <dt class="progress__number">
+                  60 дней
+                </dt>
+                <dd class="progress__text">
+                  затрачено времени
+                </dd>
+              </div>
+            </dl>
+            <p class="progress__total">
+              Затраты на питание:
+              <span>
+                15 000 РУБ.
+              </span>
+            </p>
+          </div>
         </div>
-      </section>
 
-      <section class="slider">
-        <div class="slider__wrapper wrapper">
-          <h2 class="visually-hidden">
-            Слайдер до и после
-          </h2>
-          <div class="slider__image">
-            <img class="slider__image-foreground" src="img/cat_foregroundd.png" width="280" height="232"
-              alt="Толстый кот.">
+        <div class="slider">
+          <div class="slider__wrapper wrapper">
+            <h2 class="visually-hidden">
+              Слайдер до и после
+            </h2>
+            <div class="slider__image">
+              <img class="slider__image-foreground" src="img/cat_foregroundd.png" width="280" height="232"
+                alt="Толстый кот.">
+            </div>
+            <div class="slider__image">
+              <img class="slider__image-background" src="img/cat_backgroundd.png" width="280" height="232"
+                alt="Худой кот.">
+            </div>
+            <button class="slider__button before-button" type="button">Было</button>
+            <input class="slider__range" type="range" min="1" max="100" value="50" name="slider" id="slider">
+            <button class="slider__button after-button" type="button">Стало</button>
+            <div class="slider__button button"></div>
           </div>
-          <div class="slider__image">
-            <img class="slider__image-background" src="img/cat_backgroundd.png" width="280" height="232"
-              alt="Худой кот.">
-          </div>
-          <button class="slider__button before-button" type="button">Было</button>
-          <input class="slider__range" type="range" min="1" max="100" value="50" name="slider" id="slider">
-          <button class="slider__button after-button" type="button">Стало</button>
-          <div class="slider__button button"></div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
     <section class="contacts">
       <div class="contacts__wrapper wrapper">

@@ -34,6 +34,18 @@
   .promo {
     position: relative;
 
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 720px;
+      height: 692px;
+      top: -170px;
+      left: 721px;
+      background: linear-gradient(to right, $color-green 80%, $color-green-100);
+      opacity: 0.8;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -42,8 +54,10 @@
       height: 692px;
       top: -170px;
       left: 721px;
-      background-image: url("../img/background_green.png");
+      background-image: url("../img/cat-background-desktop.jpg");
       opacity: 0.9;
+      background-repeat: no-repeat;
+      z-index: -1;
     }
   }
 }
@@ -66,6 +80,7 @@
     margin-bottom: 200px;
     padding-left: 150px;
     padding-right: 300px;
+    row-gap: 40px;
   }
 }
 
@@ -95,6 +110,7 @@
   .promo__heading {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin: 0;
   }
 }
 
@@ -127,7 +143,7 @@
   .promo__slogan-text {
     grid-column: 1/2;
     grid-row: 2/3;
-    align-self: end;
+    align-self: center;
   }
 }
 
