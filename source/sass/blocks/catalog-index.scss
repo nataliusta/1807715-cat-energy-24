@@ -1,3 +1,10 @@
+@media (min-width: $desktop-width) {
+  .catalog-index__wrapper {
+    padding-top: 122px;
+    padding-bottom: 51px;
+  }
+}
+
 .catalog-index__list {
   margin: 0;
   padding: 0;

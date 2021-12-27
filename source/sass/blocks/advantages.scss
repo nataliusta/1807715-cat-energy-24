@@ -1,3 +1,13 @@
+.advantages__wrapper {
+  padding-bottom: 25px;
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    padding: 0 50px;
+  }
+}
+
 .advantages__heading {
   margin: 0;
   padding: 0;
@@ -15,6 +25,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .advantages__heading {
+    margin-bottom: 82px;
+    padding-left: 50px;
+  }
+}
+
 .advantages__list {
   padding: 0;
   margin: 0;
@@ -23,36 +40,99 @@
 
 @media (min-width: $tablet-width) {
   .advantages__list {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 37px;
+    counter-reset: section;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantages__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 76px;
+    column-gap: 46px;
+    padding: 0 50px;
   }
 }
 
 .advantages__item {
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-left: 70px;
   margin-bottom: 24px;
   font-size: 14px;
   line-height: 18px;
   color: $color-grey-700;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: -5px;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-color: $color-green;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/icons/icon-leaf.svg");
+  }
+
+  &--tub::before {
+    background-image: url("../img/icons/icon_tub.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../img/icons/icon_eat.svg");
+  }
+
+  &--alarm::before {
+    background-image: url("../img/icons/icon_alarm.svg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .advantages__item {
-    margin: 0;
-    padding-top: 151px;
-    padding-right: 15px;
+    padding-top: 100px;
+    padding-right: 55px;
+    padding-left: 0;
     padding-bottom: 57px;
+    margin-bottom: 37px;
     font-size: 16px;
     line-height: 24px;
+    z-index: 0;
+
+    &::after {
+      position: absolute;
+      top: -40px;
+      right: 70px;
+      counter-increment: section;
+      content: "" counter(section);
+      font-family: $added-regular-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $color-grey-100;
+      z-index: -1;
+    }
+
+    &--leaf::before {
+      @include advantages-before();
+    }
+
+    &--tub::before {
+      @include advantages-before();
+    }
+
+    &--eat::before {
+      @include advantages-before();
+    }
+
+    &--alarm::before {
+      @include advantages-before();
+    }
   }
 }

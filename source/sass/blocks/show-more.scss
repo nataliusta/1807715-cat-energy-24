@@ -1,3 +1,35 @@
+.show-more {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 30px;
+    height: 2px;
+    background-color: $color-grey-650;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    &::before,
+    &::after {
+      top: 65px;
+      width: 60px;
+    }
+  }
+}
+
+
 .show-more__title {
   margin: 0;
   padding: 0;

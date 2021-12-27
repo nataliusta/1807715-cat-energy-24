@@ -14,24 +14,24 @@
       <img class="logo__icon" src="img/icons/logo-mobile.svg" width="33" height="38" alt="" aria-hidden="true">
       <img class="logo__image" src="img/icons/cat_energy.svg" width="101" height="18" alt="Cat Energy.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link">
+          <li class="site-list__item site-list__item--current site-list__item--current-white">
+            <a class="site-list__link site-list__link--white">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
+            <a class="site-list__link site-list__link--white" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+            <a class="site-list__link site-list__link--white" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -44,7 +44,7 @@
     <section class="promo">
       <div class="promo__wrapper wrapper">
         <h1 class="promo__heading">
-          Функциональное питание для котов
+          Функциональное<br> питание для котов
         </h1>
         <p class="promo__slogan-text">
           Занялся собой? Займись котом!
@@ -59,7 +59,7 @@
       <div class="catalog-index__wrapper wrapper">
         <h2 class="visually-hidden">Программы для ваших котов</h2>
         <ul class="catalog-index__list catalog-list">
-          <li class="catalog-list__item">
+          <li class="catalog-list__item catalog-list__item--cat">
             <h3 class="catalog-list__title">
               Похудение
             </h3>
@@ -73,7 +73,7 @@
               </span>
             </a>
           </li>
-          <li class="catalog-list__item">
+          <li class="catalog-list__item catalog-list__item--pantera">
             <h3 class="catalog-list__title">
               Набор массы
             </h3>
@@ -112,52 +112,60 @@
     </section>
 
     <section class="progress">
-      <div class="progress__wrapper wrapper">
-        <h2 class="progress__heading">Живой пример</h2>
-        <p class="progress__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <dl class="progress__list">
-          <div class="progress__item">
-            <dt class="progress__number">
-              5 кг
-            </dt>
-            <dd class="progress__text">
-              снижение веса
-            </dd>
+      <div class="progress__container">
+        <div class="progress__wrapper wrapper">
+          <h2 class="progress__heading">Живой пример</h2>
+          <p class="progress__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок!
+            При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <div class="progress__list-container">
+            <dl class="progress__list">
+              <div class="progress__item">
+                <dt class="progress__number">
+                  5 кг
+                </dt>
+                <dd class="progress__text">
+                  снижение веса
+                </dd>
+              </div>
+              <div class="progress__item">
+                <dt class="progress__number">
+                  60 дней
+                </dt>
+                <dd class="progress__text">
+                  затрачено времени
+                </dd>
+              </div>
+            </dl>
+            <p class="progress__total">
+              Затраты на питание:
+              <span>
+                15 000 РУБ.
+              </span>
+            </p>
           </div>
-          <div class="progress__item">
-            <dt class="progress__number">
-              60 дней
-            </dt>
-            <dd class="progress__text">
-              затрачено времени
-            </dd>
-          </div>
-        </dl>
-        <p class="progress__total">
-          Затраты на питание: 15 000 РУБ.
-        </p>
-      </div>
-    </section>
+        </div>
 
-    <section class="slider">
-      <div class="slider__wrapper wrapper">
-        <h2 class="visually-hidden">
-          Слайдер до и после
-        </h2>
-        <div class="slider__image">
-          <img class="slider__image-foreground" src="img/cat_foregroundd.png" width="280" height="232"
-            alt="Толстый кот.">
+        <div class="slider">
+          <div class="slider__wrapper wrapper">
+            <h2 class="visually-hidden">
+              Слайдер до и после
+            </h2>
+            <div class="slider__image">
+              <img class="slider__image-foreground" src="img/cat_foregroundd.png" width="280" height="232"
+                alt="Толстый кот.">
+            </div>
+            <div class="slider__image">
+              <img class="slider__image-background" src="img/cat_backgroundd.png" width="280" height="232"
+                alt="Худой кот.">
+            </div>
+            <button class="slider__button before-button" type="button">Было</button>
+            <input class="slider__range" type="range" min="1" max="100" value="50" name="slider" id="slider">
+            <button class="slider__button after-button" type="button">Стало</button>
+            <div class="slider__button button"></div>
+          </div>
         </div>
-        <div class="slider__image">
-          <img class="slider__image-background" src="img/cat_backgroundd.png" width="280" height="232" alt="Худой кот.">
-        </div>
-        <button class="slider__button before-button" type="button">Было</button>
-        <input class="slider__range" type="range" min="1" max="100" value="50" name="slider" id="slider">
-        <button class="slider__button after-button" type="button">Стало</button>
-        <div class="slider__button button"></div>
       </div>
     </section>
 
@@ -170,8 +178,12 @@
         <p class="contacts__text">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
-        <img class="contacts__map" src="img/map.jpg" width="320" height="362" alt="Карта.">
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="320" height="362" allowfullscreen
+        title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург">
+      </iframe>
     </section>
   </main>
 
@@ -247,6 +259,7 @@
       </div>
     </section>
   </footer>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

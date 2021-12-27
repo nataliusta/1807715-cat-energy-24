@@ -1,0 +1,6 @@
+@mixin advantages-before($width: 80px, $height: 80px, $top: 0, $left: 0) {
+  width: $width;
+  height: $height;
+  top: $top;
+  left: $left;
+}

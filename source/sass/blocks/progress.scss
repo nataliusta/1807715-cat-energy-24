@@ -2,6 +2,15 @@
   background-color: $color-grey-200;
 }
 
+@media (min-width: $desktop-width) {
+  .progress__container {
+    display: grid;
+    grid-template-columns: 1fr 720px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+}
+
 .progress__wrapper {
   padding: 25px 20px;
 }
@@ -14,7 +23,8 @@
 
 @media (min-width: $desktop-width) {
   .progress__wrapper {
-    background-color: $color-white;
+    padding: 0 130px;
+    background: linear-gradient(to top, $color-grey-200 78%, $color-white 22%);
   }
 }
 
@@ -38,20 +48,55 @@
 
 @media (min-width: $desktop-width) {
   .progress__heading {
-    margin-bottom: 76px;
-    background-color: $color-white;
+    margin-bottom: 146px;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .progress__list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .progress__list-container {
+    flex-direction: column;
   }
 }
 
 .progress__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .progress__list {
+    justify-content: space-between;
+    width: 370px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .progress__list {
+    width: 462px;
+    justify-content: space-between;
+  }
+}
+
+.progress__item {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 7px;
+}
+
 .progress__number {
+  align-self: end;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 24px;
@@ -77,11 +122,30 @@
 }
 
 .progress__total {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   font-family: $added-regular-font;
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .progress__total {
+    flex-direction: column;
+    align-self: center;
+    font-size: 20px;
+    text-align: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .progress__total {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
 }

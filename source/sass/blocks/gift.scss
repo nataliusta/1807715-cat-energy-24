@@ -1,6 +1,76 @@
 .gift {
-  background: url("../img/catalog/cat_catalog.jpg");
+  position: relative;
+  padding: 187px 60px 43px;
+  height: 289px;
+  background-image: url("../img/catalog/cat_catalog.jpg"), linear-gradient(to bottom, $color-grey-300 50%, $color-grey-800);
   background-repeat: no-repeat;
+  background-position: top center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 58px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/icons/icon_gift.svg");
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 289px;
+    background-image: url("../img/background_green.png");
+    opacity: 0.9;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    padding: 70px 100px;
+    height: 200px;
+    background-image: url("../img/catalog/cat_catalog_tb.jpg"), linear-gradient(to bottom, $color-grey-300, $color-grey-800);
+
+    &::before {
+      left: -450px;
+    }
+
+    &::after {
+      height: 200px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100px;
+    padding: 187px 60px 40px;
+    width: 245px;
+    height: 289px;
+    background-image: url("../img/catalog/cat_catalog.jpg"), linear-gradient(to bottom, $color-grey-300, $color-grey-800);
+
+    &::before {
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    &::after {
+      width: 245px;
+      height: 289px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -10,10 +80,27 @@
 }
 
 .gift__text {
+  position: relative;
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 20px;
   color: $color-white;
   text-align: center;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .gift__text {
+    grid-column: 2/3;
+    text-align: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift__text {
+    grid-row: 2/3;
+    padding: 0 40px;
+    text-align: center;
+  }
 }
