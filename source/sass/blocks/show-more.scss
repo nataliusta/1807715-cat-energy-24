@@ -6,7 +6,9 @@
     content: "";
     position: absolute;
     top: 25px;
-    right: 130px;
+    right: 0;
+    left: 0;
+    margin: auto;
     width: 30px;
     height: 2px;
     background-color: $color-grey-650;
