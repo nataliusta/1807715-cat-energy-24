@@ -4,12 +4,22 @@
 }
 
 .form-options__legend {
+  position: relative;
   margin-bottom: 34px;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   text-transform: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: -220px;
+    height: 2px;
+    background-color: $color-green;
+  }
 }
 
 @media (min-width: $tablet-width) {

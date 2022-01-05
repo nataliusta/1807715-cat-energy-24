@@ -1,0 +1,21 @@
+.radio__text {
+  padding-left: 60px;
+
+  &::before {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $color-grey-500;
+    content: "";
+    border-radius: 50%;
+  }
+
+  [type="radio"]:checked + &::after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: $color-green;
+    border-radius: 50%;
+  }
+}

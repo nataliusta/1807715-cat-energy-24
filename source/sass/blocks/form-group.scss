@@ -15,6 +15,7 @@
 }
 
 .form-group__legend {
+  position: relative;
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
@@ -23,6 +24,16 @@
   line-height: 26px;
   font-weight: 400;
   text-transform: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 400px;
+    right: -80px;
+    height: 2px;
+    background-color: $color-green;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -33,11 +44,22 @@
 }
 
 .form-group__label {
+  position: relative;
   margin-right: 10px;
   font-size: 16px;
   line-height: 18px;
   align-self: center;
   text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: 120px;
+    right: -30px;
+    height: 2px;
+    background-color: $color-green;
+  }
 }
 
 @media (min-width: $tablet-width) {
