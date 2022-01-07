@@ -1,3 +1,4 @@
+
 @media (min-width: $desktop-width) {
   .additional__wrapper {
     display: grid;
@@ -26,6 +27,12 @@
   grid-template-rows: 30px 25px 40px;
   padding-top: 12px;
   padding-bottom: 18px;
+  border-top: 1px solid $color-grey-500;
+}
+
+.additional__card:last-child {
+  margin-bottom: 35px;
+  border-bottom: 1px solid $color-grey-500;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,7 +1,8 @@
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 26px;
+  padding: 26px 20px;
+  background-color: $color-grey-100;
 }
 
 @media (min-width: $tablet-width) {
