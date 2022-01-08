@@ -8,7 +8,7 @@
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     row-gap: 58px;
-    padding: 0 72px;
+    padding: 55px 72px;
   }
 }
 
@@ -24,10 +24,6 @@
     padding: 56px 80px;
     background-color: $color-white;
   }
-}
-
-.contacts {
-  padding-top: 27px;
 }
 
 @media (min-width: $desktop-width) {

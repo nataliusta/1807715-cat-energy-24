@@ -1,22 +1,29 @@
 .social-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 45px 45px 45px;
   justify-content: center;
+  column-gap: 7px;
   margin: 0;
   padding: 0;
-  margin-bottom: 43px;
+  margin-bottom: 23px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   list-style-type: none;
+  border-top: 1px solid $color-grey-600;
+  border-bottom: 1px solid $color-grey-600;
 }
 
 @media (min-width: $tablet-width) {
   .social-list {
     margin: 0 auto;
+    border: none;
   }
 }
 
 .social-list__item {
-  margin-right: 30px;
+  justify-self: center;
 }
 
 .social-list__link {
-  padding: 5px;
+  padding: 10px;
 }
