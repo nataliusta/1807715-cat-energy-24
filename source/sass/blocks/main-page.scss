@@ -23,6 +23,7 @@
 .main-page__text {
   margin: 0;
   padding: 0;
+  padding-right: 10px;
   margin-bottom: 39px;
   font-family: $added-regular-font;
   font-size: 14px;
@@ -33,7 +34,6 @@
 @media (min-width: $tablet-width) {
   .main-page__text {
     margin-bottom: 66px;
-    padding-right: 330px;
     font-size: 20px;
     line-height: 30px;
   }

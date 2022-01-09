@@ -1,7 +1,7 @@
 .form-group {
   margin: 0;
   padding: 0;
-  margin-bottom: 23px;
+  padding-bottom: 10px;
   border: none;
 }
 
@@ -18,12 +18,14 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  padding-top: 26px;
+  margin-bottom: 20px;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   text-transform: none;
+  color: $color-black;
 
   &::after {
     position: absolute;
@@ -60,6 +62,11 @@
     height: 2px;
     background-color: $color-green;
   }
+
+  &--textarea {
+    font-size: 24px;
+    text-transform: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -81,7 +88,7 @@
 
 .form-group__input {
   flex-grow: 1;
-  padding: 10px;
+  padding: 14px 12px;
   font-family: $added-regular-font;
   font-size: 16px;
   line-height: 18px;
@@ -89,6 +96,18 @@
   color: $color-grey-700;
   border: 1px solid $color-grey-500;
   text-transform: uppercase;
+
+  &[type="email"] {
+    background-image: url("../img/icons/icon_email.svg");
+    background-repeat: no-repeat;
+    background-position: 92% 50%;
+  }
+
+  &[type="tel"] {
+    background-image: url("../img/icons/icon_phone.svg");
+    background-repeat: no-repeat;
+    background-position: 93% 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {

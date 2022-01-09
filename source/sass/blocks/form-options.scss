@@ -11,6 +11,7 @@
   line-height: 26px;
   font-weight: 400;
   text-transform: none;
+  color: $color-black;
 
   &::after {
     position: absolute;
@@ -32,6 +33,7 @@
 .form-options__checkbox-list {
   margin: 0;
   padding: 0;
+  padding-bottom: 20px;
   list-style-type: none;
 }
 

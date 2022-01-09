@@ -1,14 +1,13 @@
-.radio {
+.checkbox {
   display: block;
 }
 
-.radio__text {
+.checkbox__text {
   display: grid;
   grid-template-columns: 30px 1fr;
   align-items: center;
   gap: 15px;
   margin-bottom: 13px;
-  padding-left: 20px;
 
   &::before {
     grid-column: 1/2;
@@ -17,17 +16,15 @@
     height: 30px;
     border: 1px solid $color-grey-500;
     content: "";
-    border-radius: 50%;
   }
 
-  [type="radio"]:checked + &::after {
+  [type="checkbox"]:checked + &::after {
     grid-column: 1/2;
     grid-row: 1/2;
-    content: "";
-    margin-left: 8px;
-    width: 14px;
-    height: 13px;
-    background-color: $color-green;
-    border-radius: 50%;
+    content: url("..img/icons/checkboxbutton.svg");
+    margin-left: 6px;
+    width: 18px;
+    height: 14px;
   }
 }
+
