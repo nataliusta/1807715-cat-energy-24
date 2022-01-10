@@ -50,7 +50,7 @@
 @media (min-width: $desktop-width) {
   .form-options__checkbox-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: none;
+    grid-template-rows: 1fr;
     column-gap: 90px;
     padding: 0;
   }
