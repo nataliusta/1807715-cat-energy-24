@@ -38,9 +38,9 @@
 @media (min-width: $tablet-width) {
   .site-list__item--current::after {
     position: absolute;
-    right: 11px;
-    left: 11px;
-    bottom: 0;
+    right: 18px;
+    left: 18px;
+    bottom: 8px;
     height: 2px;
     background-color: $color-green;
     content: "";

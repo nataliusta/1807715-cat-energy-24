@@ -20,6 +20,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-program__radio-list {
+    margin-top: -50px;
+  }
+}
+
 .form-program__item {
   list-style-type: none;
 }

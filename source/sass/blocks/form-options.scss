@@ -33,7 +33,7 @@
 .form-options__checkbox-list {
   margin: 0;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   list-style-type: none;
 }
 
@@ -41,7 +41,7 @@
   .form-options__checkbox-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     column-gap: 45px;
     width: 100%;
   }
@@ -50,7 +50,9 @@
 @media (min-width: $desktop-width) {
   .form-options__checkbox-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
     column-gap: 90px;
+    padding: 0;
   }
 }
 
