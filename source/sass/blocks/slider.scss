@@ -1,5 +1,5 @@
 .slider {
-  background-color: $color-grey-200;
+  background-color: $color-grey-100;
 }
 
 .slider__wrapper {
@@ -9,25 +9,98 @@
 @media (min-width: $tablet-width) {
   .slider__wrapper {
     padding: 0 100px;
-    background: linear-gradient(to top, $color-grey-200 78%, $color-white 22%);
+    padding-bottom: 55px;
+    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__wrapper {
     padding: 0 200px;
+    padding-bottom: 65px;
     background-color: $color-white;
   }
 }
 
+.slider__image {
+  text-align: center;
+}
+
+.slider__container {
+  display: grid;
+  grid-template-columns: 55px 86px 55px;
+  column-gap: 13px;
+  justify-content: center;
+}
+
 @media (min-width: $tablet-width) {
-  .slider__image {
-    margin-left: auto;
-    margin-right: auto;
+  .slider__container {
+    grid-template-columns: 70px 426px 70px;
+    align-items: center;
+  }
+}
+
+.slider__input {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: 0;
+    width: 85px;
+    height: 14px;
+    background-color: $color-white;
+    border-radius: 6px;
+    border: 1px solid $color-grey-500;
+
+    @media (min-width: $tablet-width) {
+      top: -8px;
+      left: 200px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 7px;
+    width: 35px;
+    height: 6px;
+    background-color: $color-green;
+    border-radius: 6px;
+
+    @media (min-width: $tablet-width) {
+      width: 8px;
+      height: 8px;
+      top: 5px;
+      left: 201px;
+      margin-left: 12px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.slider__range {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__range {
+    display: block;
+    background-color: $color-grey-500;
+    width: 420px;
+    height: 6px;
+    border: none;
   }
 }
 
 .slider__button {
+  padding: 0;
   font-family: $added-regular-font;
   font-size: 16px;
   line-height: 20px;
@@ -35,4 +108,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__button {
+    font-size: 20px;
+    line-height: 29px;
+    border-bottom: 1px dotted $color-grey-500;
+    margin: 0 auto;
+  }
 }
