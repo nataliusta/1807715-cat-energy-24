@@ -21,10 +21,8 @@
 }
 
 .form-group__legend {
-  position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 26px;
   margin-bottom: 20px;
   font-family: $added-regular-font;
   font-size: 24px;
@@ -32,6 +30,7 @@
   font-weight: 400;
   text-transform: none;
   color: $color-black;
+  background-color: $color-white;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,6 +59,16 @@
   &--textarea {
     font-size: 24px;
     text-transform: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: $color-green;
+      right: -30px;
+      top: 11px;
+      width: calc(100% - 120px);
+    }
   }
 }
 
@@ -72,6 +81,27 @@
       font-size: 36px;
       line-height: 36px;
       text-transform: none;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: $color-green;
+        top: 22px;
+        left: -60px;
+        height: 2px;
+        width: 30px;
+
+        @media (min-width: $tablet-width) {
+          left: -80px;
+          width: 50px;
+        }
+      }
+
+      &::after {
+        top: 22px;
+        right: -70px;
+        width: calc(100% - 150px);
+      }
     }
   }
 }
@@ -94,25 +124,25 @@
   &[type="email"] {
     background-image: url("../img/icons/icon_email.svg");
     background-repeat: no-repeat;
-    background-position: 92% 50%;
+    background-position: right 20px top 50%;
   }
 
   &[type="tel"] {
     background-image: url("../img/icons/icon_phone.svg");
     background-repeat: no-repeat;
-    background-position: 93% 50%;
+    background-position: right 18px top 50%;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-group__input[type="email"] {
-    background-position: 96% 50%;
+    background-position: right 20px top 50%;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-group__input[type="tel"] {
-    background-position: 96% 50%;
+    background-position: right 18px top 50%;
   }
 }
 

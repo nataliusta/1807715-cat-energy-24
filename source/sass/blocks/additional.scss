@@ -21,6 +21,7 @@
 .additional__list {
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
   list-style-type: none;
 }
 
@@ -40,7 +41,6 @@
 }
 
 .additional__card:last-child {
-  margin-bottom: 35px;
   border-bottom: 1px solid $color-grey-500;
 }
 

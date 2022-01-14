@@ -1,10 +1,10 @@
 .form-options {
+  position: relative;
   padding: 0;
   border: none;
 }
 
 .form-options__legend {
-  position: relative;
   margin-bottom: 34px;
   font-family: $added-regular-font;
   font-size: 24px;
@@ -14,12 +14,13 @@
   color: $color-black;
 
   &::after {
-    position: absolute;
     content: "";
-    top: 15px;
-    left: -220px;
+    position: absolute;
     height: 2px;
     background-color: $color-green;
+    right: -22px;
+    top: 14px;
+    width: calc(100% - 150px);
   }
 }
 
@@ -27,6 +28,35 @@
   .form-options__legend {
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $color-green;
+      top: 22px;
+      left: -62px;
+      height: 2px;
+      width: 30px;
+    }
+
+    &::after {
+      right: -63px;
+      top: 22px;
+      width: calc(100% - 180px);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-options__legend::before {
+    left: -82px;
+    width: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-options__legend::after {
+    right: -90px;
   }
 }
 
@@ -41,7 +71,6 @@
   .form-options__checkbox-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     column-gap: 45px;
     width: 100%;
   }
@@ -50,7 +79,6 @@
 @media (min-width: $desktop-width) {
   .form-options__checkbox-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     column-gap: 90px;
     padding: 0;
   }
