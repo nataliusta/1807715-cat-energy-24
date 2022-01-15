@@ -1,49 +1,45 @@
 .form-options {
-  position: relative;
   padding: 0;
   border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    margin-top: -44px;
+    background-color: $color-green;
+    height: 2px;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      margin-top: -48px;
+    }
+  }
 }
 
 .form-options__legend {
+  margin: 0;
+  margin-left: -22px;
   margin-bottom: 34px;
+  padding: 0 20px;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   text-transform: none;
   color: $color-black;
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    background-color: $color-green;
-    right: -22px;
-    top: 14px;
-    width: calc(100% - 150px);
-  }
+  background-color: $color-white;
 }
 
 @media (min-width: $tablet-width) {
   .form-options__legend {
+    padding: 0 40px;
+    margin-left: 0;
     font-size: 36px;
     line-height: 36px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: $color-green;
-      top: 22px;
-      left: -62px;
-      height: 2px;
-      width: 30px;
-    }
-
-    &::after {
-      right: -63px;
-      top: 22px;
-      width: calc(100% - 180px);
-    }
   }
 }
 

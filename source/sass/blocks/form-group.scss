@@ -11,32 +11,51 @@
   }
 }
 
+.form-group--contacts::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  margin-top: -56px;
+  background-color: $color-green;
+  height: 2px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-group--contacts::before {
+    margin-top: -75px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .form-group--contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 78px;
-    width: 100%;
   }
 }
 
-.form-group__legend { /*проблемы с линией :)*/
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
+.form-group__legend {
+  position: relative;
+  margin: 10px 70px 20px -20px;
+  padding: 0 20px;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
-  text-transform: none;
   color: $color-black;
   background-color: $color-white;
+  text-transform: none;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
   .form-group__legend {
+    margin: 0;
     margin-bottom: 60px;
     padding-top: 70px;
+    padding-left: 37px;
+    padding-right: 40px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -49,7 +68,6 @@
 }
 
 .form-group__label {
-  position: relative;
   margin-right: 10px;
   font-size: 16px;
   line-height: 18px;
@@ -58,17 +76,11 @@
 
   &--textarea {
     font-size: 24px;
+    margin-left: -20px;
+    padding: 0 20px;
+    width: max-content;
+    background-color: $color-white;
     text-transform: none;
-
-    &::after {
-      content: "";
-      position: absolute;
-      height: 2px;
-      background-color: $color-green;
-      right: -30px;
-      top: 11px;
-      width: calc(100% - 120px);
-    }
   }
 }
 
@@ -78,36 +90,29 @@
     line-height: 30px;
 
     &--textarea {
+      padding: 0 40px;
+      margin: 0;
       font-size: 36px;
       line-height: 36px;
       text-transform: none;
-
-      &::before {
-        position: absolute;
-        content: "";
-        background-color: $color-green;
-        top: 22px;
-        left: -60px;
-        height: 2px;
-        width: 30px;
-
-        @media (min-width: $tablet-width) {
-          left: -80px;
-          width: 50px;
-        }
-      }
-
-      &::after {
-        top: 22px;
-        right: -70px;
-        width: calc(100% - 150px);
-      }
     }
   }
 }
 
 .form-group__field {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    &--email {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    &--tel {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+  }
 }
 
 .form-group__input {
@@ -157,6 +162,17 @@
 .form-group--textarea {
   display: grid;
   row-gap: 37px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    margin-top: 10px;
+    background-color: $color-green;
+    height: 2px;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -165,6 +181,10 @@
     padding-bottom: 10px;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      margin-top: 20px;
+    }
   }
 }
 

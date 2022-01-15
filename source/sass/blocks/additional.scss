@@ -1,3 +1,23 @@
+.additional {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 0;
+    right: 0;
+    background-color: $color-green;
+    height: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 48px;
+    }
+  }
+}
+
 .additional__wrapper {
   padding-top: 25px;
   padding-bottom: 35px;
@@ -73,46 +93,25 @@
 .additional__title {
   position: relative;
   margin: 0;
-  padding: 0;
+  margin-left: -20px;
+  padding: 0 20px;
   margin-bottom: 45px;
+  width: max-content;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 15px;
-    left: 250px;
-    right: -20px;
-    height: 2px;
-    background-color: $color-green;
-  }
+  background-color: $color-white;
+  justify-self: start;
 }
 
 @media (min-width: $tablet-width) {
   .additional__title {
+    margin: 0;
     margin-bottom: 80px;
-    padding-left: 27px;
+    padding: 0 37px;
     font-size: 36px;
     line-height: 36px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 20px;
-      left: -60px;
-      width: 30px;
-      height: 2px;
-      background-color: $color-green;
-    }
-
-    &::after {
-      top: 20px;
-      left: 400px;
-      right: -60px;
-    }
   }
 }
 
@@ -121,7 +120,7 @@
     grid-column: 1/3;
     margin: 0;
     margin-bottom: 80px;
-    padding: 0;
+    padding: 0 35px 0 40px;
 
     &::before {
       left: -80px;

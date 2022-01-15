@@ -10,7 +10,7 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo logo">
+    <a href="index.html" class="page-header__logo logo">
       <img class="logo__icon" src="img/icons/logo-mobile.svg" width="33" height="38" alt="" aria-hidden="true">
       <img class="logo__image" src="img/icons/cat_energy.svg" width="101" height="18" alt="Cat Energy.">
     </a>
@@ -93,21 +93,21 @@
           </div>
 
           <fieldset class="order-form__group form-group form-group--contacts">
-            <legend class="form-group__legend">Контактные данные (владельца кота):</legend>
-            <p class="form-group__field">
-              <label class="form-group__label" for="email">
-                E-mail:*
-              </label>
-              <input class="form-group__input" type="email" placeholder="kuklachev@gmail.com" id="email"
-                name="form-page__email" required>
-            </p>
-            <p class="form-group__field">
-              <label class="form-group__label" for="phone">
-                Телефон:*
-              </label>
-              <input class="form-group__input" type="tel" placeholder="8 (960) 900-60-90" id="phone"
-                name="form-page__phone" required>
-            </p>
+              <legend class="form-group__legend">Контактные данные (владельца кота)</legend>
+              <p class="form-group__field form-group__field--email">
+                <label class="form-group__label" for="email">
+                  E-mail:*
+                </label>
+                <input class="form-group__input" type="email" placeholder="kuklachev@gmail.com" id="email"
+                  name="form-page__email" required>
+              </p>
+              <p class="form-group__field form-group__field--tel">
+                <label class="form-group__label" for="tel">
+                  Телефон:*
+                </label>
+                <input class="form-group__input" type="tel" placeholder="8 (960) 900-60-90" id="tel"
+                  name="form-page__phone" required>
+              </p>
           </fieldset>
 
           <fieldset class="order-form__group form-group form-group--textarea">
