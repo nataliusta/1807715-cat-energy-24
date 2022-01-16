@@ -125,7 +125,7 @@
                 <dt class="progress__number">
                   5 кг
                 </dt>
-                <dd class="progress__text--small">
+                <dd class="progress__text progress__undertext">
                   снижение веса
                 </dd>
               </div>
@@ -133,7 +133,7 @@
                 <dt class="progress__number">
                   60 дней
                 </dt>
-                <dd class="progress__text--small">
+                <dd class="progress__text progress__undertext">
                   затрачено времени
                 </dd>
               </div>
@@ -161,11 +161,10 @@
                 alt="Худой кот.">
             </div>
             <div class="slider__container">
-              <button class="slider__button before-button" type="button">Было</button>
-              <label class="slider__input">
+              <button class="slider__button slider__button--before" type="button">Было</button>
+              <label class="visually-hidden slider__input" for="slider">Слайдер до и после</label>
                 <input class="slider__range" type="range" min="1" max="100" name="slider">
-              </label>
-              <button class="slider__button after-button" type="button">Стало</button>
+              <button class="slider__button slider__button--after" type="button">Стало</button>
             </div>
           </div>
         </div>

@@ -162,6 +162,7 @@
 .form-group--textarea {
   display: grid;
   row-gap: 37px;
+  padding-bottom: 22px;
 
   &::before {
     position: absolute;
@@ -178,7 +179,7 @@
 @media (min-width: $tablet-width) {
   .form-group--textarea {
     row-gap: 76px;
-    padding-bottom: 10px;
+    padding-bottom: 65px;
     font-size: 36px;
     line-height: 36px;
 
