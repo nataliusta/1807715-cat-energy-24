@@ -125,7 +125,7 @@
                 <dt class="progress__number">
                   5 кг
                 </dt>
-                <dd class="progress__text progress__undertext">
+                <dd class="progress__undertext">
                   снижение веса
                 </dd>
               </div>
@@ -133,7 +133,7 @@
                 <dt class="progress__number">
                   60 дней
                 </dt>
-                <dd class="progress__text progress__undertext">
+                <dd class="progress__undertext">
                   затрачено времени
                 </dd>
               </div>
@@ -152,19 +152,21 @@
             <h2 class="visually-hidden">
               Слайдер до и после
             </h2>
-            <div class="slider__image">
-              <img class="slider__image-foreground" src="img/cat_foregroundd.png" width="280" height="232"
-                alt="Толстый кот.">
-            </div>
-            <div class="slider__image">
-              <img class="slider__image-background" src="img/cat_backgroundd.png" width="280" height="232"
-                alt="Худой кот.">
+            <div class="slider__images">
+              <div class="slider__image slider__image-foreground">
+              </div>
+              <div class="slider__image slider__image-background">
+              </div>
             </div>
             <div class="slider__container">
-              <button class="slider__button slider__button--before" type="button">Было</button>
+              <button class="slider__button slider__button--before" type="button">
+                Было
+              </button>
               <label class="visually-hidden slider__input" for="slider">Слайдер до и после</label>
-                <input class="slider__range" type="range" min="1" max="100" name="slider">
-              <button class="slider__button slider__button--after" type="button">Стало</button>
+              <input class="slider__range" type="range" value="50" min="1" max="100" id="slider">
+              <button class="slider__button slider__button--after" type="button">
+                Стало
+              </button>
             </div>
           </div>
         </div>
@@ -262,6 +264,7 @@
     </section>
   </footer>
   <script src="js/main-nav.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>

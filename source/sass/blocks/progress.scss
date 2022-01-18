@@ -130,6 +130,8 @@
   position: absolute;
   top: 46px;
   left: 50%;
+  margin: 0;
+  padding: 0;
   margin-left: -40px;
   width: 80px;
   font-size: 12px;
@@ -138,7 +140,7 @@
   background-color: $color-grey-100;
 
   @media (min-width: $tablet-width) {
-    top: 55px;
+    top: 60px;
     width: 150px;
     margin-left: -75px;
     font-size: 14px;
@@ -147,7 +149,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 80px;
+    top: 60px;
     background-color: $color-grey-100;
   }
 }

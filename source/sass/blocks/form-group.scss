@@ -16,14 +16,14 @@
   content: "";
   left: 0;
   right: 0;
-  margin-top: -56px;
+  top: 718px;
   background-color: $color-green;
   height: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .form-group--contacts::before {
-    margin-top: -75px;
+    top: 965px;
   }
 }
 
@@ -31,7 +31,11 @@
   .form-group--contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 78px;
+    column-gap: 95px;
+
+    &::before {
+      top: 745px;
+    }
   }
 }
 
@@ -51,10 +55,10 @@
 
 @media (min-width: $tablet-width) {
   .form-group__legend {
-    margin: 0;
+    margin-left: -40px;
     margin-bottom: 60px;
     padding-top: 70px;
-    padding-left: 37px;
+    padding-left: 40px;
     padding-right: 40px;
     font-size: 36px;
     line-height: 36px;
@@ -75,10 +79,10 @@
   text-transform: uppercase;
 
   &--textarea {
-    font-size: 24px;
     margin-left: -20px;
     padding: 0 20px;
     width: max-content;
+    font-size: 24px;
     background-color: $color-white;
     text-transform: none;
   }
@@ -90,8 +94,8 @@
     line-height: 30px;
 
     &--textarea {
-      padding: 0 40px;
-      margin: 0;
+      margin-left: -40px;
+      padding-left: 40px;
       font-size: 36px;
       line-height: 36px;
       text-transform: none;
@@ -123,7 +127,7 @@
   line-height: 18px;
   font-weight: 400;
   color: $color-grey-700;
-  border: 1px solid $color-grey-500;
+  border: 1px solid $color-grey-400;
   text-transform: uppercase;
 
   &[type="email"] {
@@ -136,6 +140,19 @@
     background-image: url("../img/icons/icon_phone.svg");
     background-repeat: no-repeat;
     background-position: right 18px top 50%;
+  }
+
+  &:hover {
+    outline: 1px solid $color-grey-500;
+  }
+
+  &:focus {
+    outline: 2px solid $color-grey-700;
+    outline-offset: -2px;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 2px solid $color-error;
   }
 }
 

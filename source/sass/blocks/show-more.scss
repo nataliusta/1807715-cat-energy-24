@@ -89,6 +89,14 @@
   color: $color-grey-700;
   background-color: $color-grey-100;
   text-align: center;
+
+  &:hover {
+    background-color: $color-grey-300;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
