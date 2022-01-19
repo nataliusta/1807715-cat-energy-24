@@ -27,3 +27,11 @@
 .social-list__link {
   padding: 10px;
 }
+
+.social-list__icon:hover .social {
+  fill: $color-green;
+}
+
+.social-list__icon:active .social {
+  opacity: 0.3;
+}

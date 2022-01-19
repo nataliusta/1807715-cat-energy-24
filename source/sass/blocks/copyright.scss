@@ -12,6 +12,10 @@
   align-items: center;
   margin: 0 auto;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -19,4 +23,12 @@
     width: 163px;
     margin-right: 0;
   }
+}
+
+.copyright__image:hover .copyright__logo {
+  fill: $color-green;
+}
+
+.copyright__image:active .copyright__logo {
+  opacity: 0.3;
 }
