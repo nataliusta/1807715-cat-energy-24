@@ -22,6 +22,7 @@
 }
 
 .slider__wrapper {
+  margin: 0 auto;
   position: relative;
   padding: 40px 20px;
 }
@@ -135,6 +136,7 @@
 
 .slider__range {
   width: 85px;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
