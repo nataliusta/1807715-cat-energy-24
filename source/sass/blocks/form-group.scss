@@ -104,6 +104,7 @@
 }
 
 .form-group__field {
+  position: relative;
   display: flex;
 
   @media (min-width: $desktop-width) {
@@ -130,18 +131,6 @@
   border: 1px solid $color-grey-400;
   text-transform: uppercase;
 
-  &[type="email"] {
-    background-image: url("../img/icons/icon_email.svg");
-    background-repeat: no-repeat;
-    background-position: right 20px top 50%;
-  }
-
-  &[type="tel"] {
-    background-image: url("../img/icons/icon_phone.svg");
-    background-repeat: no-repeat;
-    background-position: right 18px top 50%;
-  }
-
   &:hover {
     outline: 1px solid $color-grey-500;
   }
@@ -156,16 +145,21 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .form-group__input[type="email"] {
-    background-position: right 20px top 50%;
-  }
+.form-group__image {
+  position: absolute;
+  top: 16px;
+  right: 10px;
 }
 
 @media (min-width: $tablet-width) {
-  .form-group__input[type="tel"] {
-    background-position: right 18px top 50%;
+  .form-group__image {
+    top: 18px;
+    right: 20px;
   }
+}
+
+.form-group__icon:hover {
+  stroke: $color-green;
 }
 
 @media (min-width: $tablet-width) {
