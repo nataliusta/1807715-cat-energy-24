@@ -162,6 +162,14 @@
   stroke: $color-green;
 }
 
+.form-group__icon:focus {
+  stroke: $color-green;
+}
+
+.form-group__icon:invalid {
+  stroke: $color-error;
+}
+
 @media (min-width: $tablet-width) {
   .form-group__input {
     padding: 10px 18px;
