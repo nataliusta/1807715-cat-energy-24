@@ -99,7 +99,7 @@
     width: 50%;
     height: 511px;
     max-width: 592px;
-    top: 20px;
+    top: 50px;
     left: 0;
     background-color: unset;
   }
@@ -107,8 +107,8 @@
 
 @media (min-width: $tablet-width) {
   .slider__image--background {
-    height: 511px;
-    top: 10px;
+    height: 555px;
+    top: 5px;
     right: -40px;
     width: 592px;
   }
@@ -116,9 +116,9 @@
 
 @media (min-width: $desktop-width) {
   .slider__image--background {
-    width: 400px;
-    top: 20px;
-    left: -30px;
+    height: 560px;
+    top: 10px;
+    left: 30px;
   }
 }
 
