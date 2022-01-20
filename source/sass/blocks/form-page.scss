@@ -29,6 +29,7 @@
 
 .form-page__legend {
   margin: 0 auto;
+  padding-bottom: 32px;
   font-family: $main-regular-font;
   font-size: 14px;
   line-height: 16px;
@@ -38,11 +39,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form-page__legend {
+  .form-page__legend--small {
     grid-column: 2/3;
     margin-left: 0;
-    font-size: 20px;
-    line-height: 30px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    align-self: center;
   }
 }
 
@@ -54,6 +57,7 @@
   .form-page__container {
     grid-template-columns: 1fr 1fr;
     column-gap: 61px;
+    padding-bottom: 50px;
   }
 }
 

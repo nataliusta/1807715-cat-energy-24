@@ -5,7 +5,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 25px;
+    top: 35px;
     right: 0;
     left: 0;
     margin: auto;
@@ -85,13 +85,23 @@
 }
 
 .show-more__button {
+  margin: 0 20px;
   color: $color-grey-700;
   background-color: $color-grey-100;
   text-align: center;
+
+  &:hover {
+    background-color: $color-grey-300;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .show-more__button {
     justify-self: stretch;
+    margin: 0;
   }
 }

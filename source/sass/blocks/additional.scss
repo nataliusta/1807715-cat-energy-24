@@ -1,16 +1,47 @@
+.additional {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 0;
+    right: 0;
+    background-color: $color-green;
+    height: 2px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 48px;
+    }
+  }
+}
+
+.additional__wrapper {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional__wrapper {
+    padding-bottom: 70px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .additional__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: start;
     column-gap: 80px;
-    margin-bottom: 86px;
   }
 }
 
 .additional__list {
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
   list-style-type: none;
 }
 
@@ -26,11 +57,18 @@
   grid-template-rows: 30px 25px 40px;
   padding-top: 12px;
   padding-bottom: 18px;
+  border-top: 1px solid $color-grey-500;
+}
+
+.additional__card:last-child {
+  border-bottom: 1px solid $color-grey-500;
 }
 
 @media (min-width: $tablet-width) {
   .additional__card {
     padding: 26px 38px;
+    border: 1px solid $color-grey-500;
+    border-bottom: none;
   }
 }
 
@@ -43,6 +81,8 @@
     align-items: center;
     justify-self: start;
     border-top: 1px solid $color-grey-500;
+    border-left: none;
+    border-right: none;
 
     &:last-child {
       border-bottom: 1px solid $color-grey-500;
@@ -51,19 +91,25 @@
 }
 
 .additional__title {
+  position: relative;
   margin: 0;
-  padding: 0;
+  margin-left: -20px;
+  padding: 0 20px;
   margin-bottom: 45px;
+  width: max-content;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  background-color: $color-white;
+  justify-self: start;
 }
 
 @media (min-width: $tablet-width) {
   .additional__title {
+    margin: 0;
     margin-bottom: 80px;
-    padding-left: 27px;
+    padding: 0 37px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -74,7 +120,17 @@
     grid-column: 1/3;
     margin: 0;
     margin-bottom: 80px;
-    padding: 0;
+    padding: 0 35px 0 40px;
+
+    &::before {
+      left: -80px;
+      width: 40px;
+    }
+
+    &::after {
+      left: 370px;
+      right: -765px;
+    }
   }
 }
 

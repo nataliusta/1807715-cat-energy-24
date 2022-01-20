@@ -203,6 +203,10 @@
     background-image: url("../img/icons/icon-right.svg");
     background-repeat: no-repeat;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

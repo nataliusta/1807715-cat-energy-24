@@ -1,13 +1,14 @@
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 26px;
+  padding: 26px 20px;
+  background-color: $color-grey-100;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     row-gap: 58px;
-    padding: 0 72px;
+    padding: 55px 72px;
   }
 }
 
@@ -23,10 +24,6 @@
     padding: 56px 80px;
     background-color: $color-white;
   }
-}
-
-.contacts {
-  padding-top: 27px;
 }
 
 @media (min-width: $desktop-width) {
@@ -47,7 +44,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__heading {
-    padding-right: 160px;
+    padding-right: 150px;
     font-size: 20px;
     line-height: 21px;
     text-align: start;
@@ -70,7 +67,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts__text {
-    padding-left: 160px;
+    padding-left: 140px;
     font-size: 16px;
     line-height: 20px;
     text-align: end;
@@ -85,6 +82,7 @@
 }
 
 .contacts iframe {
+  position: relative;
   display: block;
   margin-right: -20px;
   width: 100%;

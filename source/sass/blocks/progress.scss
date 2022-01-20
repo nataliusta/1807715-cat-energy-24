@@ -1,5 +1,5 @@
 .progress {
-  background-color: $color-grey-200;
+  background-color: $color-grey-100;
 }
 
 @media (min-width: $desktop-width) {
@@ -7,11 +7,12 @@
     display: grid;
     grid-template-columns: 1fr 720px;
     margin: 0 auto;
-    padding-bottom: 10px;
+    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
   }
 }
 
 .progress__wrapper {
+  margin: 0 auto;
   padding: 25px 20px;
 }
 
@@ -24,7 +25,7 @@
 @media (min-width: $desktop-width) {
   .progress__wrapper {
     padding: 0 130px;
-    background: linear-gradient(to top, $color-grey-200 78%, $color-white 22%);
+    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
   }
 }
 
@@ -48,6 +49,7 @@
 
 @media (min-width: $desktop-width) {
   .progress__heading {
+    margin-top: -15px;
     margin-bottom: 146px;
     padding-top: 30px;
   }
@@ -68,40 +70,50 @@
 }
 
 .progress__list {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, (1fr));
+  column-gap: 32px;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
   .progress__list {
-    justify-content: space-between;
+    column-gap: 42px;
     width: 370px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .progress__list {
+    margin-bottom: 55px;
     width: 462px;
-    justify-content: space-between;
   }
 }
 
 .progress__item {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 7px;
+  position: relative;
 }
 
 .progress__number {
   align-self: end;
+  padding: 15px 20px;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+  border: 1px solid $color-grey-500;
+  border-radius: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .progress__number {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
 }
 
 .progress__text {
@@ -114,6 +126,34 @@
   color: $color-grey-700;
 }
 
+.progress__undertext {
+  position: absolute;
+  top: 46px;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  margin-left: -40px;
+  width: 80px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  background-color: $color-grey-100;
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    width: 150px;
+    margin-left: -75px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 60px;
+    background-color: $color-grey-100;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .progress__text {
     font-size: 16px;
@@ -121,11 +161,17 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .progress__text {
+    margin-bottom: 70px;
+    margin-top: -25px;
+  }
+}
+
 .progress__total {
-  display: flex;
-  justify-content: center;
+  display: block;
   margin: 0;
-  padding: 0;
+  padding: 0 46px;
   font-family: $added-regular-font;
   font-size: 14px;
   line-height: 20px;
@@ -135,8 +181,11 @@
 
 @media (min-width: $tablet-width) {
   .progress__total {
-    flex-direction: column;
-    align-self: center;
+    display: grid;
+    grid-template-rows: 20px 20px;
+    row-gap: 9px;
+    margin-top: 10px;
+    padding: 0;
     font-size: 20px;
     text-align: end;
   }
@@ -144,8 +193,9 @@
 
 @media (min-width: $desktop-width) {
   .progress__total {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
+    grid-template-columns: 200px 1fr;
+    justify-items: start;
+    column-gap: 63px;
+    margin: 0;
   }
 }
