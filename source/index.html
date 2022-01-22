@@ -6,12 +6,19 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
 </head>
 
 <body>
   <header class="page-header">
     <a class="page-header__logo logo">
-      <img class="logo__icon" src="img/icons/logo-mobile.svg" width="33" height="38" alt="" aria-hidden="true">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/icons/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg">
+        <img class="logo__icon" src="img/icons/logo-mobile.svg" width="33" height="38" alt="" aria-hidden="true">
+      </picture>
       <img class="logo__image" src="img/icons/cat_energy.svg" width="101" height="18" alt="Cat Energy.">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -49,8 +56,12 @@
         <p class="promo__slogan-text">
           Занялся собой? Займись котом!
         </p>
-        <img class="promo__image" src="img/index-mainn.png" width="280" height="270"
-          alt="Питание для котов Cat Energy Pro.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index_main_desktop.png, img/index_main_desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index_main_tablet.png, img/index_main_tablet@2x.png 2x">
+          <img class="promo__image" src="img/index_main_mobile.png" srcset="img/index_main_mobile@2x.png 2x" width="280"
+            height="270" alt="Питание для котов Cat Energy Pro.">
+        </picture>
         <a class="promo__button button button--large" href="#">Подобрать программу</a>
       </div>
     </section>

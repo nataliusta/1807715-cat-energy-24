@@ -1,9 +1,18 @@
-.logo__icon {
-  width: 33px;
-  height: 38px;
-}
-
 .logo__image {
   width: 101px;
   height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 117px;
+    height: 21px;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    margin-left: 10px;
+    width: 101px;
+    height: 18px;
+  }
+}
+

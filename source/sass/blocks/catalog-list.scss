@@ -55,7 +55,7 @@
   .catalog-list__item {
     display: grid;
     grid-template-columns: 1fr 200px;
-    column-gap: 50px;
+    column-gap: 43px;
     margin-bottom: 30px;
     padding: 77px 62px 53px 53px;
 
@@ -129,6 +129,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-list__title {
+    padding-left: 0;
     font-size: 36px;
     line-height: 36px;
     text-align: start;
@@ -138,8 +139,8 @@
 @media (min-width: $desktop-width) {
   .catalog-list__title {
     margin-bottom: 72px;
-    padding-left: 130px;
-    padding-right: 92px;
+    padding-left: 145px;
+    padding-right: 75px;
     text-align: center;
   }
 }
