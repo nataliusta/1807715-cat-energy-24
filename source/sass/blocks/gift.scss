@@ -2,7 +2,7 @@
   position: relative;
   padding: 187px 60px 43px;
   height: 289px;
-  background-image: url("../img/catalog/cat_catalog.jpg"), linear-gradient(to bottom, $color-grey-300 50%, $color-grey-800);
+  background-image: url("../img/catalog/cat_catalog_mobile.jpg"), linear-gradient(to bottom, $color-grey-300 50%, $color-grey-800);
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -38,7 +38,7 @@
     grid-template-columns: 1fr 180px;
     padding: 70px 100px;
     height: 200px;
-    background-image: url("../img/catalog/cat_catalog_tb.jpg"), linear-gradient(to bottom, $color-grey-300, $color-grey-800);
+    background-image: url("../img/catalog/cat_catalog_tablet.jpg"), linear-gradient(to bottom, $color-grey-300, $color-grey-800);
 
     &::before {
       left: -450px;
@@ -58,7 +58,7 @@
     padding: 187px 60px 40px;
     width: 245px;
     height: 289px;
-    background-image: url("../img/catalog/cat_catalog.jpg"), linear-gradient(to bottom, $color-grey-300, $color-grey-800);
+    background-image: url("../img/catalog/cat_catalog_desktop.jpg"), linear-gradient(to bottom, $color-grey-300, $color-grey-800);
 
     &::before {
       left: 0;

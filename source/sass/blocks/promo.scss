@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 27px;
   color: $color-white;
-  background-image: url("../img/index-background.jpg"), linear-gradient(to bottom, $color-grey-750 63%, $color-white 27%);
+  background-image: url("../img/cat_index_mobile.jpg"), linear-gradient(to bottom, $color-grey-750 63%, $color-white 27%);
   background-repeat: no-repeat;
   background-position: top center;
   z-index: 0;
@@ -51,7 +51,7 @@
       height: 692px;
       top: -170px;
       left: 50%;
-      background-image: url("../img/cat-background-desktop.jpg");
+      background-image: url("../img/cat_index_desktop.jpg");
       opacity: 0.9;
       background-repeat: no-repeat;
       background-position: 100% 100%;
@@ -71,12 +71,14 @@
     grid-template-rows: 120px 55px 50px;
     row-gap: 20px;
     padding: 0 80px;
+    margin-bottom: 410px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__wrapper {
-    margin-bottom: 200px;
+    grid-template-columns: 1fr 552px;
+    margin-bottom: 150px;
     padding-left: 150px;
     padding-right: 300px;
     row-gap: 40px;
@@ -159,16 +161,17 @@
 @media (min-width: $tablet-width) {
   .promo__image {
     order: 2;
-    margin-top: -90px;
-    margin-left: 10px;
-    width: 600px;
-    height: 600px;
+    margin-top: 38px;
+    margin-left: -80px;
+    width: 709px;
+    height: 609px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__image {
-    margin-top: -40px;
+    margin-top: -60px;
+    margin-left: -30px;
     grid-column: 2/3;
     width: 552px;
     height: 499px;

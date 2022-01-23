@@ -31,7 +31,8 @@
   .slider__wrapper {
     display: grid;
     grid-template-rows: 1fr 80px;
-    row-gap: 30px;
+    row-gap: 10px;
+    margin-left: -50px;
     padding: 0 50px;
     padding-bottom: 55px;
     background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
@@ -57,7 +58,8 @@
 @media (min-width: $tablet-width) {
   .slider__images {
     justify-content: center;
-    padding: 0 90px;
+    padding: 0 70px;
+    margin-left: -10px;
   }
 }
 
@@ -70,7 +72,7 @@
     grid-column: 1/2;
     grid-row: 1/2;
     position: absolute;
-    background-image: url("../img/cat_foreground.png");
+    background-image: url("../img/cat_foreground_mobile.png");
     background-color: $color-grey-100;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,6 +81,10 @@
     top: 40px;
     left: 0;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat_foreground_mobile@2x.png");
+    }
   }
 
   &--background {
@@ -97,28 +103,45 @@
 @media (min-width: $tablet-width) {
   .slider__image--foreground {
     width: 50%;
-    height: 511px;
-    max-width: 592px;
-    top: 20px;
-    left: 0;
+    height: 550px;
+    background-image: url("../img/cat_foreground_tablet.png");
+    top: 10px;
+    left: -30px;
     background-color: unset;
+
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat_foreground_tablet@2x.png");
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .slider__image--background {
-    height: 511px;
-    top: 10px;
-    right: -40px;
+    height: 560px;
+    top: 0;
+    right: -20px;
     width: 592px;
+    background-image: url("../img/cat_background_tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat_background_tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__image--foreground {
+    top: 25px;
+    left: -15px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__image--background {
-    width: 400px;
+    width: 510px;
     top: 20px;
-    left: -30px;
+    left: -20px;
   }
 }
 

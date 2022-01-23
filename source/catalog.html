@@ -6,13 +6,24 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
 </head>
 
 <body>
   <header class="page-header">
     <a href="index.html" class="page-header__logo logo">
-      <img class="logo__icon" src="img/icons/logo-mobile.svg" width="33" height="38" alt="" aria-hidden="true">
-      <img class="logo__image" src="img/icons/cat_energy.svg" width="101" height="18" alt="Cat Energy.">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/icons/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/icons/logo-tablet.svg">
+        <img class="logo__icon" src="img/icons/logo-mobile.svg" width="33" height="38" alt="" aria-hidden="true">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo_catenergy_desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo_catenergy_tablet.svg">
+        <img class="logo__image" src="img/icons/cat_energy.svg" width="101" height="18" alt="Cat Energy.">
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
@@ -50,8 +61,15 @@
         <ul class="catalog-page__list">
           <li class="catalog-page__card">
             <a class="catalog-page__image-link" href="#">
-              <img class="catalog-page__image" src="img/catalog/pro_orange500.png" width="140" height="112"
-                alt="Catenergy Курица 500g.">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/orange_pro500_desktop.png, img/catalog/orange_pro500_desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/orange_pro500_tablet.png, img/catalog/orange_pro500_tablet@2x.png 2x">
+                <img class="catalog-page__image" src="img/catalog/orange_pro500_mobile.png"
+                  srcset="img/catalog/orange_pro500_mobile@2x.png 2x" width="140" height="112"
+                  alt="Catenergy Курица 500g.">
+              </picture>
             </a>
             <a class="catalog-page__title-link" href="#">
               <h3 class="catalog-page__card-title">Cat Energy PRO 500 г</h3>
@@ -68,8 +86,15 @@
           </li>
           <li class="catalog-page__card">
             <a class="catalog-page__image-link" href="#">
-              <img class="catalog-page__image" src="img/catalog/pro_orange1000.png" width="140" height="112"
-                alt="Catenergy Курица 500g.">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/orange_pro1000_desktop.png, img/catalog/orange_pro1000_desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/orange_pro1000_tablet.png, img/catalog/orange_pro1000_tablet@2x.png 2x">
+                <img class="catalog-page__image" src="img/catalog/orange_pro1000_mobile.png"
+                  srcset="img/catalog/orange_pro1000_mobile@2x.png 2x" width="140" height="112"
+                  alt="Catenergy Курица 1000g.">
+              </picture>
             </a>
             <a class="catalog-page__title-link" href="#">
               <h3 class="catalog-page__card-title">Cat Energy PRO 1000 г</h3>
@@ -86,8 +111,15 @@
           </li>
           <li class="catalog-page__card">
             <a class="catalog-page__image-link" href="#">
-              <img class="catalog-page__image" src="img/catalog/pro_green500.png" width="140" height="112"
-                alt="Catenergy Курица 500g.">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/green_pro500_desktop.png, img/catalog/green_pro500_desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/green_pro500_tablet.png, img/catalog/green_pro500_tablet@2x.png 2x">
+                <img class="catalog-page__image" src="img/catalog/green_pro500_mobile.png"
+                  srcset="img/catalog/green_pro500_mobile@2x.png 2x" width="140" height="112"
+                  alt="Catenergy Рыба 500g.">
+              </picture>
             </a>
             <a class="catalog-page__title-link" href="#">
               <h3 class="catalog-page__card-title">Cat Energy PRO 500 г</h3>
@@ -104,8 +136,15 @@
           </li>
           <li class="catalog-page__card">
             <a class="catalog-page__image-link" href="#">
-              <img class="catalog-page__image" src="img/catalog/pro_green1000.png" width="140" height="112"
-                alt="Catenergy Курица 500g.">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/green_pro1000_desktop.png, img/catalog/green_pro1000_desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/green_pro1000_tablet.png, img/catalog/green_pro1000_tablet@2x.png 2x">
+                <img class="catalog-page__image" src="img/catalog/green_pro1000_mobile.png"
+                  srcset="img/catalog/green_pro1000_mobile@2x.png 2x" width="140" height="112"
+                  alt="Catenergy Рыба 1000g.">
+              </picture>
             </a>
             <a class="catalog-page__title-link" href="#">
               <h3 class="catalog-page__card-title">Cat Energy PRO 1000 г</h3>
@@ -122,8 +161,15 @@
           </li>
           <li class="catalog-page__card">
             <a class="catalog-page__image-link" href="#">
-              <img class="catalog-page__image" src="img/catalog/slim_blue500.png" width="140" height="112"
-                alt="Catenergy Курица 500g.">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/blue_slim500_desktop.png, img/catalog/blue_slim500_desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/blue_slim500_tablet.png, img/catalog/blue_slim500_tablet@2x.png 2x">
+                <img class="catalog-page__image" src="img/catalog/blue_slim500_mobile.png"
+                  srcset="img/catalog/blue_slim500_mobile@2x.png 2x" width="140" height="112"
+                  alt="Catenergy Гречка 500g.">
+              </picture>
             </a>
             <a class="catalog-page__title-link" href="#">
               <h3 class="catalog-page__card-title">Cat Energy slim 500 г</h3>
@@ -140,8 +186,15 @@
           </li>
           <li class="catalog-page__card">
             <a class="catalog-page__image-link" href="#">
-              <img class="catalog-page__image" src="img/catalog/slim_blue1000.png" width="140" height="112"
-                alt="Catenergy Курица 500g.">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/blue_slim1000_desktop.png, img/catalog/blue_slim1000_desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/blue_slim1000_tablet.png, img/catalog/blue_slim1000_tablet@2x.png 2x">
+                <img class="catalog-page__image" src="img/catalog/blue_slim1000_mobile.png"
+                  srcset="img/catalog/blue_slim1000_mobile@2x.png 2x" width="140" height="112"
+                  alt="Catenergy Гречка 1000g.">
+              </picture>
             </a>
             <a class="catalog-page__title-link" href="#">
               <h3 class="catalog-page__card-title">Cat Energy slim 1000 г</h3>
@@ -158,8 +211,15 @@
           </li>
           <li class="catalog-page__card">
             <a class="catalog-page__image-link" href="#">
-              <img class="catalog-page__image" src="img/catalog/slim_violet500.png" width="140" height="112"
-                alt="Catenergy Курица 500g.">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/catalog/violet_slim500_desktop.png, img/catalog/violet_slim500_desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/violet_slim500_tablet.png, img/catalog/violet_slim500_tablet@2x.png 2x">
+                <img class="catalog-page__image" src="img/catalog/violet_slim500_mobile.png"
+                  srcset="img/catalog/violet_slim500_mobile@2x.png 2x" width="140" height="112"
+                  alt="Catenergy Рис 500g.">
+              </picture>
             </a>
             <a class="catalog-page__title-link" href="#">
               <h3 class="catalog-page__card-title">Cat Energy slim 500 г</h3>
