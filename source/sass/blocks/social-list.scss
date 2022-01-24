@@ -26,12 +26,34 @@
 
 .social-list__link {
   padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px;
+  }
 }
 
-.social-list__icon:hover .social {
+@media (min-width: $tablet-width) {
+  .social-list__icon--vkontakte {
+    width: 30px;
+    height: 22px;
+  }
+
+  .social-list__icon--instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__icon--facebook {
+    margin-top: -5px;
+    width: 28px;
+    height: 33px;
+  }
+}
+
+.social-list__icon:hover {
   stroke: $color-green;
 }
 
-.social-list__icon:active .social {
+.social-list__icon:active {
   opacity: 0.3;
 }

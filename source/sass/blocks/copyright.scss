@@ -25,10 +25,10 @@
   }
 }
 
-.copyright__image:hover .copyright__logo {
-  fill: $color-green;
+.copyright__image:hover {
+  stroke: $color-green;
 }
 
-.copyright__image:active .copyright__logo {
+.copyright__image:active {
   opacity: 0.3;
 }

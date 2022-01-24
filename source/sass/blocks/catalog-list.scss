@@ -25,30 +25,6 @@
     background-color: $color-green;
     border-radius: 50%;
   }
-
-  &::after {
-    position: absolute;
-    content: "";
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: cover;
-  }
-
-  &--cat::after {
-    top: 18px;
-    left: 32px;
-    width: 36px;
-    height: 50px;
-    background-image: url("../img/icons/icon_blackcatt.svg");
-  }
-
-  &--pantera::after {
-    top: 32px;
-    left: 16px;
-    width: 67px;
-    height: 28px;
-    background-image: url("../img/icons/icon_pantera.svg");
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -66,22 +42,6 @@
       width: 200px;
       height: 200px;
     }
-
-    &--cat::after {
-      top: 81px;
-      right: 90px;
-      left: auto;
-      width: 140px;
-      height: 194px;
-    }
-
-    &--pantera::after {
-      top: 140px;
-      right: 30px;
-      left: auto;
-      width: 268px;
-      height: 112px;
-    }
   }
 }
 
@@ -96,15 +56,50 @@
       width: 100px;
       height: 100px;
     }
+  }
+}
 
-    &--cat::after {
+.catalog-list__icon {
+  position: absolute;
+  display: block;
+
+  &--cat {
+    width: 36px;
+    height: 50px;
+    left: 32px;
+    top: 18px;
+
+    @media (min-width: $tablet-width) {
+      top: 81px;
+      right: 90px;
+      left: auto;
+      width: 140px;
+      height: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
       top: 41px;
       left: 67px;
       width: 70px;
       height: 97px;
     }
+  }
 
-    &--pantera::after {
+  &--pantera {
+    top: 32px;
+    left: 16px;
+    width: 67px;
+    height: 28px;
+
+    @media (min-width: $tablet-width) {
+      top: 140px;
+      right: 30px;
+      left: auto;
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktop-width) {
       top: 67px;
       left: 33px;
       width: 134px;
