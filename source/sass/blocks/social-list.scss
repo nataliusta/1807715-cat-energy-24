@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 45px 45px 45px;
   justify-content: center;
+  align-items: center;
   column-gap: 7px;
   margin: 0;
   padding: 0;
@@ -25,10 +26,15 @@
 }
 
 .social-list__link {
+  display: block;
   padding: 10px;
 
-  @media (min-width: $tablet-width) {
-    padding: 12px;
+  &:hover {
+    stroke: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -48,12 +54,4 @@
     width: 28px;
     height: 33px;
   }
-}
-
-.social-list__icon:hover {
-  stroke: $color-green;
-}
-
-.social-list__icon:active {
-  opacity: 0.3;
 }
