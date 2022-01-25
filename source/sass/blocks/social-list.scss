@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 45px 45px 45px;
   justify-content: center;
+  align-items: center;
   column-gap: 7px;
   margin: 0;
   padding: 0;
@@ -25,13 +26,31 @@
 }
 
 .social-list__link {
+  display: block;
   padding: 10px;
+
+  &:hover {
+    stroke: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.social-list__icon:hover .social {
-  stroke: $color-green;
-}
+@media (min-width: $tablet-width) {
+  .social-list__icon--vkontakte {
+    width: 30px;
+    height: 22px;
+  }
 
-.social-list__icon:active .social {
-  opacity: 0.3;
+  .social-list__icon--instagram {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__icon--facebook {
+    width: 28px;
+    height: 33px;
+  }
 }
