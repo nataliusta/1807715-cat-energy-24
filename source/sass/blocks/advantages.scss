@@ -11,7 +11,7 @@
 .advantages__heading {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   font-family: $added-regular-font;
   font-size: 36px;
   line-height: 40px;
@@ -61,8 +61,8 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-left: 70px;
-  margin-bottom: 24px;
+  padding-left: 80px;
+  margin-bottom: 27px;
   font-size: 14px;
   line-height: 18px;
   color: $color-grey-700;
@@ -70,7 +70,8 @@
   &::before {
     position: absolute;
     content: "";
-    left: -5px;
+    top: -2px;
+    left: 0;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;

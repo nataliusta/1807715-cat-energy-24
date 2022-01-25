@@ -13,7 +13,7 @@
 
 .progress__wrapper {
   margin: 0 auto;
-  padding: 25px 20px;
+  padding: 24px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -73,7 +73,7 @@
 .progress__list {
   display: grid;
   grid-template-columns: repeat(2, (1fr));
-  column-gap: 32px;
+  column-gap: 31px;
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
@@ -99,6 +99,7 @@
 
 .progress__number {
   align-self: end;
+  margin-top: -2px;
   padding: 15px 20px;
   font-family: $added-regular-font;
   font-size: 24px;
@@ -120,7 +121,7 @@
 .progress__text {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   font-size: 14px;
   line-height: 18px;
   text-align: start;
@@ -133,7 +134,7 @@
   left: 50%;
   margin: 0;
   padding: 0;
-  margin-left: -40px;
+  margin-left: -41px;
   width: 80px;
   font-size: 12px;
   line-height: 12px;
