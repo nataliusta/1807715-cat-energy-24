@@ -10,14 +10,15 @@
   .page-footer__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 32px;
     align-items: center;
-    padding: 56px 30px;
+    padding: 58px 30px 55px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding: 58px 50px;
+    padding: 58px 110px;
   }
 }
 

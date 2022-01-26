@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 720px;
     margin: 0 auto;
+    margin-bottom: -24px;
     background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
   }
 }
@@ -19,13 +20,15 @@
 @media (min-width: $tablet-width) {
   .progress__wrapper {
     background-color: $color-white;
-    padding-bottom: 50px;
+    padding-top: 44px;
+    padding-left: 30px;
+    padding-bottom: 78px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .progress__wrapper {
-    padding: 0 130px;
+    padding: 0 110px;
     background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
   }
 }
@@ -51,8 +54,8 @@
 @media (min-width: $desktop-width) {
   .progress__heading {
     margin-top: -15px;
-    margin-bottom: 146px;
-    padding-top: 30px;
+    margin-bottom: 170px;
+    padding-top: 48px;
   }
 }
 
@@ -61,6 +64,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: -30px;
   }
 }
 
@@ -88,8 +92,8 @@
 
 @media (min-width: $desktop-width) {
   .progress__list {
-    margin-bottom: 55px;
-    width: 462px;
+    margin-bottom: 50px;
+    width: 362px;
   }
 }
 
@@ -111,9 +115,16 @@
 
 @media (min-width: $tablet-width) {
   .progress__number {
+    margin-left: -4px;
+    margin-bottom: 11px;
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .progress__number {
+    margin-left: 4px;
   }
 }
 
@@ -141,9 +152,9 @@
   background-color: $color-grey-100;
 
   @media (min-width: $tablet-width) {
-    top: 60px;
+    top: 63px;
     width: 150px;
-    margin-left: -75px;
+    margin-left: -77px;
     font-size: 14px;
     line-height: 14px;
     background-color: $color-white;
@@ -157,6 +168,8 @@
 
 @media (min-width: $tablet-width) {
   .progress__text {
+    margin-bottom: 53px;
+    padding-right: 17px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -165,7 +178,8 @@
 @media (min-width: $desktop-width) {
   .progress__text {
     margin-bottom: 70px;
-    margin-top: -25px;
+    margin-top: -24px;
+    padding-right: 62px;
   }
 }
 
@@ -185,8 +199,9 @@
     display: grid;
     grid-template-rows: 20px 20px;
     row-gap: 9px;
-    margin-top: 10px;
+    margin-top: 11px;
     padding: 0;
+    padding-right: 12px;
     font-size: 20px;
     text-align: end;
   }
@@ -196,7 +211,7 @@
   .progress__total {
     grid-template-columns: 200px 1fr;
     justify-items: start;
-    column-gap: 63px;
+    column-gap: 38px;
     margin: 0;
   }
 }

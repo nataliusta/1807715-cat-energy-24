@@ -2,3 +2,10 @@
   width: 101px;
   height: 18px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}

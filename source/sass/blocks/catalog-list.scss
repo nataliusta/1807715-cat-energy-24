@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
-    padding: 0 60px;
   }
 }
 
@@ -57,11 +56,11 @@
     grid-template-columns: 1fr 200px;
     column-gap: 43px;
     margin-bottom: 30px;
-    padding: 77px 62px 53px 53px;
+    padding: 77px 67px 57px 48px;
 
     &::before {
       top: 92px;
-      right: 62px;
+      right: 63px;
       left: auto;
       width: 200px;
       height: 200px;
@@ -69,15 +68,15 @@
 
     &--cat::after {
       top: 81px;
-      right: 90px;
+      right: 93px;
       left: auto;
       width: 140px;
       height: 194px;
     }
 
     &--pantera::after {
-      top: 140px;
-      right: 30px;
+      top: 135px;
+      right: 29px;
       left: auto;
       width: 268px;
       height: 112px;
@@ -88,7 +87,7 @@
 @media (min-width: $desktop-width) {
   .catalog-list__item {
     display: block;
-    padding: 77px 52px 55px 52px;
+    padding: 77px 52px 59px 52px;
 
     &::before {
       top: 47px;
@@ -129,7 +128,9 @@
 
 @media (min-width: $tablet-width) {
   .catalog-list__title {
-    padding-left: 0;
+    margin-top: -6px;
+    margin-bottom: 25px;
+    padding-left: 5px;
     font-size: 36px;
     line-height: 36px;
     text-align: start;
@@ -139,7 +140,7 @@
 @media (min-width: $desktop-width) {
   .catalog-list__title {
     margin-bottom: 72px;
-    padding-left: 145px;
+    padding-left: 138px;
     padding-right: 75px;
     text-align: center;
   }
@@ -171,6 +172,9 @@
 @media (min-width: $tablet-width) {
   .catalog-list__text {
     grid-column: 1/2;
+    margin-bottom: 51px;
+    padding-left: 4px;
+    padding-right: 3px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -178,7 +182,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog-list__text {
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+    padding: 0;
   }
 }
 
@@ -197,8 +202,8 @@
   &::after {
     position: absolute;
     content: "";
-    top: calc(50% - 5px);
-    right: 0;
+    top: calc(50% - 6px);
+    right: -7px;
     width: 32px;
     height: 10px;
     background-image: url("../img/icons/icon-right.svg");
@@ -214,6 +219,7 @@
   .catalog-list__link {
     grid-column: 1/2;
     justify-self: start;
+    padding-left: 3px;
     font-size: 20px;
     line-height: 30px;
   }

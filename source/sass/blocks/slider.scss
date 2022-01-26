@@ -10,14 +10,16 @@
 @media (min-width: $tablet-width) {
   .slider {
     padding: 0;
-    grid-template-columns: 700px;
-    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
+    grid-template-columns: 592px;
+    background: linear-gradient(to top, $color-grey-100 74%, $color-white 26%);
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .slider {
+    padding: 0;
     grid-template-columns: 592px;
+    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
   }
 }
 
@@ -31,11 +33,11 @@
   .slider__wrapper {
     display: grid;
     grid-template-rows: 1fr 80px;
-    row-gap: 10px;
+    row-gap: 5px;
     margin-left: -50px;
     padding: 0 50px;
-    padding-bottom: 55px;
-    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
+    padding-bottom: 5px;
+    background: linear-gradient(to top, $color-grey-100 74%, $color-white 26%);
   }
 }
 
@@ -44,7 +46,7 @@
     grid-template-rows: 1fr 50px;
     padding: 0 40px;
     padding-bottom: 65px;
-    background-color: $color-white;
+    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
   }
 }
 
@@ -59,7 +61,8 @@
   .slider__images {
     justify-content: center;
     padding: 0 70px;
-    margin-left: -10px;
+    margin-left: -15px;
+    margin-bottom: 25px;
   }
 }
 
@@ -103,10 +106,10 @@
 @media (min-width: $tablet-width) {
   .slider__image--foreground {
     width: 50%;
-    height: 550px;
+    height: 510px;
     background-image: url("../img/cat_foreground_tablet.png");
-    top: 10px;
-    left: -30px;
+    top: -15px;
+    left: 0;
     background-color: unset;
 
 
@@ -118,10 +121,10 @@
 
 @media (min-width: $tablet-width) {
   .slider__image--background {
-    height: 560px;
-    top: 0;
-    right: -20px;
-    width: 592px;
+    height: 510px;
+    top: -5px;
+    right: -30px;
+    width: 545px;
     background-image: url("../img/cat_background_tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -132,16 +135,16 @@
 
 @media (min-width: $desktop-width) {
   .slider__image--foreground {
-    top: 25px;
-    left: -15px;
+    top: -20px;
+    left: -36px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__image--background {
     width: 510px;
-    top: 20px;
-    left: -20px;
+    top: -4px;
+    left: -14px;
   }
 }
 
@@ -156,6 +159,8 @@
   .slider__container {
     grid-template-columns: 70px 426px 70px;
     align-items: center;
+    margin-left: 5px;
+    padding-bottom: 55px;
   }
 }
 
@@ -237,5 +242,6 @@
     line-height: 29px;
     border-bottom: 1px dotted $color-grey-500;
     margin: 0 auto;
+    margin-left: 8px;
   }
 }

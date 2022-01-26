@@ -20,6 +20,12 @@
   list-style-type: none;
 }
 
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    margin-right: -17px;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: -30px;
