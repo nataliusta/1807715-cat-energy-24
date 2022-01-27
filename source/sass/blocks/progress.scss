@@ -8,13 +8,13 @@
     grid-template-columns: 1fr 720px;
     margin: 0 auto;
     margin-bottom: -24px;
-    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
+    background: linear-gradient(to top, $color-grey-100 74%, $color-white 26%);
   }
 }
 
 .progress__wrapper {
   margin: 0 auto;
-  padding: 25px 20px;
+  padding: 27px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,7 +29,7 @@
 @media (min-width: $desktop-width) {
   .progress__wrapper {
     padding: 0 110px;
-    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
+    background-color: transparent;
   }
 }
 
@@ -103,7 +103,7 @@
 
 .progress__number {
   align-self: end;
-  padding: 15px 20px;
+  padding: 14px 20px;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 24px;

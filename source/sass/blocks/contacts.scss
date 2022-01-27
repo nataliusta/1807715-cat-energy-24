@@ -2,14 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 26px 20px;
-  background-color: $color-grey-100;
+  background-color: $color-white;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     row-gap: 58px;
     padding: 62px 72px 60px 72px;
-    background-color: $color-white;
   }
 }
 
@@ -23,7 +22,6 @@
     margin-top: 95px;
     max-width: 565px;
     padding: 59px 80px;
-    background-color: $color-white;
   }
 }
 
@@ -95,7 +93,7 @@
   display: block;
   margin-right: -20px;
   width: 100%;
-  height: 400px;
+  height: 362px;
   border: none;
   background: $color-grey-100;
 }

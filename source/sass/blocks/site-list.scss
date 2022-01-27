@@ -50,6 +50,7 @@
 
 @media (min-width: $desktop-width) {
   .site-list__item--current-white::after {
+    bottom: 8px;
     z-index: 1;
     background-color: $color-white;
   }

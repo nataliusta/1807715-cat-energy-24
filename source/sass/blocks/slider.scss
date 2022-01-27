@@ -11,22 +11,20 @@
   .slider {
     padding: 0;
     grid-template-columns: 592px;
-    background: linear-gradient(to top, $color-grey-100 74%, $color-white 26%);
+    background: linear-gradient(to top, $color-grey-100 72%, $color-white 28%);
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider {
-    padding: 0;
-    grid-template-columns: 592px;
-    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
+    background: transparent;
   }
 }
 
 .slider__wrapper {
   margin: 0 auto;
   position: relative;
-  padding: 40px 20px;
+  padding: 32px 20px 45px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,23 +35,23 @@
     margin-left: -50px;
     padding: 0 50px;
     padding-bottom: 5px;
-    background: linear-gradient(to top, $color-grey-100 74%, $color-white 26%);
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__wrapper {
     grid-template-rows: 1fr 50px;
+    margin-bottom: 45px;
     padding: 0 40px;
-    padding-bottom: 65px;
-    background: linear-gradient(to top, $color-grey-100 78%, $color-white 22%);
+    padding-bottom: 45px;
+    background-color: transparent;
   }
 }
 
 .slider__images {
   display: grid;
   grid-template-columns: var(--active-position, 50%), 1fr;
-  margin-bottom: 15px;
+  margin-bottom: 2px;
   overflow: hidden;
 }
 
@@ -63,6 +61,12 @@
     padding: 0 70px;
     margin-left: -15px;
     margin-bottom: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__images {
+    margin-bottom: 0;
   }
 }
 
@@ -81,8 +85,8 @@
     background-size: cover;
     width: 100%;
     height: 232px;
-    top: 40px;
-    left: 0;
+    top: 14px;
+    left: -12px;
     z-index: 1;
 
     @media (min-resolution: 2dppx) {
@@ -94,6 +98,7 @@
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
+    top: -15px;
     right: -10px;
     background-image: url("../img/cat_background.png");
     background-repeat: no-repeat;
@@ -135,23 +140,24 @@
 
 @media (min-width: $desktop-width) {
   .slider__image--foreground {
-    top: -20px;
-    left: -36px;
+    width: 300px;
+    top: -16px;
+    left: -38px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__image--background {
     width: 510px;
-    top: -4px;
-    left: -14px;
+    top: -8px;
+    left: 0;
   }
 }
 
 .slider__container {
   display: grid;
   grid-template-columns: 55px 86px 55px;
-  column-gap: 13px;
+  column-gap: 10px;
   justify-content: center;
 }
 
@@ -161,6 +167,14 @@
     align-items: center;
     margin-left: 5px;
     padding-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__container {
+    padding-bottom: 0;
+    margin-top: 6px;
+    margin-left: -30px;
   }
 }
 
