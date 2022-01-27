@@ -2,6 +2,12 @@
   padding-top: 28px;
 }
 
+@media (min-width: $tablet-width) {
+  .main-page__wrapper {
+    padding-top: 37px;
+  }
+}
+
 .main-page__heading {
   margin: 0;
   padding: 0;
@@ -14,7 +20,7 @@
 
 @media (min-width: $tablet-width) {
   .main-page__heading {
-    margin-bottom: 56px;
+    margin-bottom: 82px;
     font-size: 60px;
     line-height: 60px;
   }
