@@ -11,7 +11,7 @@
   .slider {
     padding: 0;
     grid-template-columns: 592px;
-    background: linear-gradient(to top, $color-grey-100 72%, $color-white 28%);
+    background: linear-gradient(to top, $color-grey-100 74%, $color-white 26%);
   }
 }
 
@@ -34,7 +34,7 @@
     row-gap: 5px;
     margin-left: -50px;
     padding: 0 50px;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
   }
 }
 
@@ -113,7 +113,7 @@
     width: 50%;
     height: 510px;
     background-image: url("../img/cat_foreground_tablet.png");
-    top: -15px;
+    top: -14px;
     left: 0;
     background-color: unset;
 
@@ -127,8 +127,8 @@
 @media (min-width: $tablet-width) {
   .slider__image--background {
     height: 510px;
-    top: -5px;
-    right: -30px;
+    top: -2px;
+    right: -34px;
     width: 545px;
     background-image: url("../img/cat_background_tablet.png");
 
@@ -165,6 +165,7 @@
   .slider__container {
     grid-template-columns: 70px 426px 70px;
     align-items: center;
+    column-gap: 12px;
     margin-left: 5px;
     padding-bottom: 55px;
   }

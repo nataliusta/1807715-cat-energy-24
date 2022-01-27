@@ -60,7 +60,7 @@
 
     &::before {
       top: 92px;
-      right: 63px;
+      right: 62px;
       left: auto;
       width: 200px;
       height: 200px;
@@ -68,7 +68,7 @@
 
     &--cat::after {
       top: 81px;
-      right: 93px;
+      right: 92px;
       left: auto;
       width: 140px;
       height: 194px;
@@ -76,7 +76,7 @@
 
     &--pantera::after {
       top: 135px;
-      right: 29px;
+      right: 28px;
       left: auto;
       width: 268px;
       height: 112px;
@@ -222,5 +222,10 @@
     padding-left: 3px;
     font-size: 20px;
     line-height: 30px;
+
+    &::after {
+      top: calc(50% - 6px);
+      right: -18px;
+    }
   }
 }

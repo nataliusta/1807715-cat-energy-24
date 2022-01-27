@@ -8,7 +8,7 @@
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     row-gap: 58px;
-    padding: 62px 72px 60px 72px;
+    padding: 60px 71px 60px 71px;
   }
 }
 
@@ -96,6 +96,12 @@
   height: 362px;
   border: none;
   background: $color-grey-100;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts iframe {
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
