@@ -1,7 +1,7 @@
 .gift {
   position: relative;
-  padding: 187px 60px 43px;
-  height: 289px;
+  padding: 185px 45px 43px 43px;
+  height: 288px;
   background-image: url("../img/catalog/cat_catalog_mobile.jpg"), linear-gradient(to bottom, $color-grey-300 50%, $color-grey-800);
   background-repeat: no-repeat;
   background-position: top center;
@@ -9,7 +9,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 58px;
+    top: 56px;
     left: 0;
     right: 0;
     margin: auto;
