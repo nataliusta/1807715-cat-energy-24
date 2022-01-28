@@ -23,7 +23,7 @@
   .show-more {
     &::before,
     &::after {
-      top: 95px;
+      top: 82px;
       width: 60px;
     }
   }
@@ -71,7 +71,7 @@
 @media (min-width: $tablet-width) {
   .show-more__text {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
     padding: 0 25px;
     font-size: 16px;
     line-height: 18px;

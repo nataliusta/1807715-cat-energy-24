@@ -41,7 +41,7 @@
     background-image: url("../img/catalog/cat_catalog_tablet.jpg"), linear-gradient(to bottom, $color-grey-300, $color-grey-800);
 
     &::before {
-      left: -450px;
+      left: -472px;
     }
 
     &::after {
@@ -94,6 +94,7 @@
   .gift__text {
     grid-column: 2/3;
     text-align: start;
+    margin-left: -5px;
   }
 }
 
