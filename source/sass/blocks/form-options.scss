@@ -37,7 +37,7 @@
 @media (min-width: $tablet-width) {
   .form-options__legend {
     padding: 0 40px;
-    margin-left: -40px;
+    margin-left: -2px;
     margin-bottom: 57px;
     font-size: 36px;
     line-height: 36px;
@@ -68,8 +68,8 @@
   .form-options__checkbox-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 45px;
-    padding-bottom: 42px;
+    column-gap: 59px;
+    padding: 0 38px 26px;
     width: 100%;
   }
 }
@@ -86,4 +86,10 @@
 .form-options__item {
   margin-bottom: 12px;
   color: $color-black;
+}
+
+@media (min-width: $tablet-width) {
+  .form-options__item {
+    margin-bottom: 16px;
+  }
 }

@@ -26,7 +26,8 @@
 
 @media (min-width: $tablet-width) {
   .main-page__heading {
-    margin-bottom: 163px;
+    margin-bottom: 55px;
+    padding: 0 40px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -51,6 +52,7 @@
 @media (min-width: $tablet-width) {
   .main-page__text {
     margin-bottom: 46px;
+    padding: 0 40px;
     font-size: 20px;
     line-height: 30px;
   }
