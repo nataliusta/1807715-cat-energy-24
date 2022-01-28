@@ -16,8 +16,9 @@
 @media (min-width: $desktop-width) {
   .catalog-page__list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 80px;
-    margin-bottom: 76px;
+    column-gap: 74px;
+    row-gap: 145px;
+    margin-bottom: 50px;
   }
 }
 
@@ -68,6 +69,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-page__image {
+    margin-top: -96px;
     width: 172px;
     height: 196px;
   }
@@ -97,7 +99,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog-page__card-title {
-    padding: 0 25px;
+    margin-top: 26px;
+    padding: 0 15px;
     line-height: 21px;
   }
 }
@@ -143,5 +146,11 @@
     padding-left: 36px;
     padding-bottom: 37px;
     border: 2px solid $color-grey-100;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-page__show-more {
+    padding-top: 95px;
   }
 }

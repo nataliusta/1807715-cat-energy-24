@@ -8,6 +8,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .main-page__wrapper {
+    padding-top: 20px;
+  }
+}
+
 .main-page__heading {
   margin: 0;
   padding: 0;
@@ -23,6 +29,12 @@
     margin-bottom: 163px;
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page__heading {
+    margin-bottom: 165px;
   }
 }
 

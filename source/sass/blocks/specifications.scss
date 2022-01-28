@@ -21,6 +21,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .specifications {
+    row-gap: 15px;
+    margin-left: 2px;
+  }
+}
+
 .specifications__title {
   justify-self: start;
   margin: 0;

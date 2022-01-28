@@ -35,6 +35,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: start;
     column-gap: 80px;
+    padding-bottom: 16px;
   }
 }
 
@@ -81,7 +82,7 @@
 @media (min-width: $desktop-width) {
   .additional__card {
     grid-template-columns: 1fr 1fr max-content 244px;
-    grid-template-rows: 72px;
+    grid-template-rows: 71px;
     column-gap: 30px;
     padding: 0;
     align-items: center;
@@ -125,6 +126,7 @@
   .additional__title {
     grid-column: 1/3;
     margin: 0;
+    margin-left: -40px;
     margin-bottom: 80px;
     padding: 0 35px 0 40px;
 
@@ -160,6 +162,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .additional__product {
+    align-self: center;
+  }
+}
+
 .additional__text {
   grid-column: 1/2;
   margin: 0;
@@ -187,6 +195,10 @@
   .additional__text {
     grid-column: 2/3;
     grid-row: 1/2;
+    margin-top: 5px;
+    margin-left: 40px;
+    margin-right: 0;
+    justify-self: start;
     text-align: start;
   }
 }
@@ -212,6 +224,8 @@
   .additional__price {
     grid-column: 3/4;
     grid-row: 1/2;
+    margin-top: 5px;
+    margin-right: 8px;
   }
 }
 

@@ -29,7 +29,6 @@
   }
 }
 
-
 .show-more__title {
   margin: 0;
   padding: 0;
@@ -55,7 +54,7 @@
 
 @media (min-width: $desktop-width) {
   .show-more__title {
-    padding: 0 32px;
+    padding: 0 20px;
   }
 }
 
@@ -71,7 +70,7 @@
 @media (min-width: $tablet-width) {
   .show-more__text {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     padding: 0 25px;
     font-size: 16px;
     line-height: 18px;
@@ -80,7 +79,8 @@
 
 @media (min-width: $desktop-width) {
   .show-more__text {
-    padding: 0 10px;
+    margin-top: 3px;
+    padding: 0;
   }
 }
 
@@ -103,5 +103,11 @@
   .show-more__button {
     justify-self: stretch;
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-more__button {
+    padding: 10px 40px;
   }
 }
