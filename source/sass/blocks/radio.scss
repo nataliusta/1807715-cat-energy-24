@@ -40,6 +40,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .radio__text {
+    grid-template-columns: 40px 1fr;
+    column-gap: 19px;
+  }
+}
+
 .radio__input:checked + .radio__text::after {
   grid-column: 1/2;
   grid-row: 1/2;

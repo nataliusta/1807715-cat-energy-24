@@ -35,7 +35,8 @@
 
 @media (min-width: $desktop-width) {
   .main-page__heading {
-    margin-bottom: 165px;
+    margin-bottom: 56px;
+    padding-left: 0;
   }
 }
 
@@ -55,5 +56,11 @@
     padding: 0 40px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page__text {
+    padding-left: 0;
   }
 }

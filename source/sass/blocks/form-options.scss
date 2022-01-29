@@ -45,6 +45,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-options__legend {
+    margin-left: -42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .form-options__legend::before {
     left: -82px;
     width: 50px;
@@ -77,9 +83,9 @@
 @media (min-width: $desktop-width) {
   .form-options__checkbox-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 90px;
+    column-gap: 84px;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
   }
 }
 

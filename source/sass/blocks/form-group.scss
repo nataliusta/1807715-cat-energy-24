@@ -11,6 +11,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-group {
+    padding: 0 0 51px;
+  }
+}
+
 .form-group--contacts {
   margin-bottom: 4px;
 
@@ -39,10 +45,10 @@
   .form-group--contacts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 95px;
+    column-gap: 76px;
 
     &::before {
-      top: 745px;
+      top: 716px;
     }
   }
 }
@@ -75,7 +81,8 @@
 
 @media (min-width: $desktop-width) {
   .form-group__legend {
-    padding-top: 10px;
+    margin-bottom: 56px;
+    padding-top: 0;
   }
 }
 
@@ -165,6 +172,13 @@
   .form-group__image {
     top: 19px;
     right: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group__image {
+    top: 17px;
+    right: 19px;
   }
 }
 

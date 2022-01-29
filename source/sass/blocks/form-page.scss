@@ -18,7 +18,7 @@
   .form-page__form--container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 90px;
+    column-gap: 80px;
     align-items: center;
   }
 }
@@ -29,7 +29,6 @@
 
 @media (min-width: $tablet-width) {
   .form-page__input-button {
-    margin-right: 38px;
     padding: 16px 40px;
   }
 }
@@ -56,15 +55,22 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form-page__legend--small {
+    padding-bottom: 22px;
+  }
+}
+
 .form-page__container {
   display: grid;
 }
 
 @media (min-width: $tablet-width) {
   .form-page__container {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
+    grid-template-columns: 1fr 180px;
+    column-gap: 60px;
     margin-left: 40px;
+    margin-right: 144px;
     padding-bottom: 50px;
   }
 }
@@ -72,5 +78,8 @@
 @media (min-width: $desktop-width) {
   .form-page__container {
     column-gap: 81px;
+    margin-left: 0;
+    margin-right: 390px;
+    padding-bottom: 61px;
   }
 }
