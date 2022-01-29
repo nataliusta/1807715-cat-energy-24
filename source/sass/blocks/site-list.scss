@@ -5,12 +5,6 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .site-list {
-    padding-right: 55px;
-  }
-}
-
 .site-list__item {
   position: relative;
   font-family: $added-regular-font;
@@ -60,7 +54,7 @@
 .site-list__link {
   position: relative;
   display: block;
-  padding: 20px;
+  padding: 22px 22px 23px;
   color: $color-black;
   background-color: $color-white;
   text-decoration: none;
