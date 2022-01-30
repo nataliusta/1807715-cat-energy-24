@@ -26,17 +26,25 @@
 
 @media (min-width: $tablet-width) {
   .main-page__heading {
-    margin-bottom: 55px;
-    padding: 0 40px;
+    margin-bottom: 163px;
     font-size: 60px;
     line-height: 60px;
+
+    &--program {
+      padding: 0 40px;
+      margin-bottom: 55px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-page__heading {
-    margin-bottom: 56px;
+    margin-bottom: 163px;
     padding-left: 0;
+
+    &--program {
+      margin-bottom: 55px;
+    }
   }
 }
 

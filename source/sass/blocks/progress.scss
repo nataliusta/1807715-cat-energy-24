@@ -87,6 +87,7 @@
   .progress__list {
     column-gap: 42px;
     width: 370px;
+    margin-bottom: 31px;
   }
 }
 
@@ -117,6 +118,7 @@
   .progress__number {
     margin-left: -4px;
     margin-bottom: 11px;
+    padding: 16px 20px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -140,6 +142,7 @@
 
 .progress__undertext {
   position: absolute;
+  display: block;
   top: 46px;
   left: 50%;
   margin: 0;
@@ -153,15 +156,15 @@
 
   @media (min-width: $tablet-width) {
     top: 63px;
-    width: 150px;
-    margin-left: -77px;
+    width: 132px;
+    margin-left: -69px;
     font-size: 14px;
     line-height: 14px;
     background-color: $color-white;
   }
 
   @media (min-width: $desktop-width) {
-    top: 60px;
+    margin-left: -65px;
     background-color: $color-grey-100;
   }
 }
@@ -177,7 +180,7 @@
 
 @media (min-width: $desktop-width) {
   .progress__text {
-    margin-bottom: 70px;
+    margin-bottom: 66px;
     margin-top: -24px;
     padding-right: 62px;
   }
