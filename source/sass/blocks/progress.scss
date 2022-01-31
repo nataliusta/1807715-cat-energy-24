@@ -14,7 +14,7 @@
 
 .progress__wrapper {
   margin: 0 auto;
-  padding: 27px 20px;
+  padding: 27px 17px 27px 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
 
 .progress__list {
   display: grid;
-  grid-template-columns: repeat(2, (1fr));
+  grid-template-columns: repeat(2, (124px));
   column-gap: 32px;
   margin: 0;
   padding: 0;
@@ -85,6 +85,7 @@
 
 @media (min-width: $tablet-width) {
   .progress__list {
+    grid-template-columns: repeat(2, (162px));
     column-gap: 42px;
     width: 370px;
     margin-bottom: 31px;
@@ -200,7 +201,7 @@
 @media (min-width: $tablet-width) {
   .progress__total {
     display: grid;
-    grid-template-rows: 20px 20px;
+    grid-template-rows: min-content 20px;
     row-gap: 9px;
     margin-top: 11px;
     padding: 0;

@@ -30,17 +30,17 @@
 @media (min-width: $tablet-width) {
   .slider__wrapper {
     display: grid;
-    grid-template-rows: 1fr 80px;
+    grid-template-rows: 592px min-content;
     row-gap: 5px;
     margin-left: -50px;
-    padding: 0 50px;
+
     padding-bottom: 7px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__wrapper {
-    grid-template-rows: 1fr 50px;
+    grid-template-rows: 592px min-content;
     margin-bottom: 45px;
     padding: 0 40px;
     padding-bottom: 45px;
@@ -166,6 +166,7 @@
     grid-template-columns: 70px 426px 70px;
     align-items: center;
     column-gap: 12px;
+
     margin-left: 5px;
     padding-bottom: 55px;
   }

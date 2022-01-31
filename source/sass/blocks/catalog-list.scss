@@ -9,14 +9,14 @@
 .catalog-list__item {
   position: relative;
   margin-bottom: 20px;
-  padding: 24px 20px 22px 20px;
+  padding: 24px 20px 20px 20px;
   background-color: $color-grey-100;
   text-align: start;
 
   &::before {
     position: absolute;
     content: "";
-    left: 22px;
+    left: 23px;
     width: 50px;
     height: 50px;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@
   }
 
   &--pantera::after {
-    top: 34px;
+    top: 35px;
     left: 13px;
     width: 67px;
     height: 28px;
@@ -150,7 +150,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: 18px;
   color: $color-grey-700;
@@ -202,7 +202,7 @@
   &::after {
     position: absolute;
     content: "";
-    top: calc(50% - 3px);
+    top: calc(50% - 5px);
     right: -7px;
     width: 32px;
     height: 10px;

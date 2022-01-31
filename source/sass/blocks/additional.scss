@@ -61,7 +61,7 @@
 .additional__card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 30px 25px 40px;
+  grid-template-rows: min-content;
   padding-top: 13px;
   padding-bottom: 21px;
   border-top: 1px solid $color-grey-500;
@@ -82,7 +82,6 @@
 @media (min-width: $desktop-width) {
   .additional__card {
     grid-template-columns: 1fr 1fr max-content 244px;
-    grid-template-rows: 71px;
     column-gap: 30px;
     padding: 0;
     align-items: center;
@@ -103,7 +102,7 @@
   margin-left: -20px;
   padding: 0 20px;
   margin-bottom: 36px;
-  width: max-content;
+  width: min-content;
   font-family: $added-regular-font;
   font-size: 24px;
   line-height: 24px;
