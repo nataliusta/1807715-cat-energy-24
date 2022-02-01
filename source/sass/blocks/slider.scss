@@ -24,17 +24,13 @@
 .slider__wrapper {
   margin: 0 auto;
   position: relative;
-  padding: 32px 20px 45px 20px;
+  padding: 0 20px 45px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .slider__wrapper {
     display: grid;
-    grid-template-rows: 592px min-content;
     row-gap: 5px;
-    margin-left: -50px;
-
-    padding-bottom: 7px;
   }
 }
 
@@ -110,11 +106,11 @@
 
 @media (min-width: $tablet-width) {
   .slider__image--foreground {
-    width: 50%;
+    width: 52%;
     height: 510px;
     background-image: url("../img/cat_foreground_tablet.png");
-    top: -14px;
-    left: 0;
+    top: -12px;
+    left: -21px;
     background-color: unset;
 
 
@@ -127,9 +123,9 @@
 @media (min-width: $tablet-width) {
   .slider__image--background {
     height: 510px;
-    top: -2px;
-    right: -34px;
-    width: 545px;
+    top: -6px;
+    right: -25px;
+    width: 532px;
     background-image: url("../img/cat_background_tablet.png");
 
     @media (min-resolution: 2dppx) {
@@ -165,10 +161,8 @@
   .slider__container {
     grid-template-columns: 70px 426px 70px;
     align-items: center;
-    column-gap: 12px;
-
-    margin-left: 5px;
-    padding-bottom: 55px;
+    column-gap: 2px;
+    margin-bottom: 12px;
   }
 }
 

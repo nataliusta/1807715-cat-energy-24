@@ -109,7 +109,7 @@
 @media (min-width: $tablet-width) {
   .advantages__item {
     padding-top: 112px;
-    padding-right: 72px;
+    padding-right: 65px;
     padding-left: 0;
     padding-bottom: 57px;
     margin-bottom: 37px;
@@ -119,8 +119,9 @@
 
     &::after {
       position: absolute;
-      top: -40px;
-      right: 79px;
+      top: -38px;
+      right: 0;
+      left: 116px;
       counter-increment: section;
       content: "" counter(section);
       font-family: $added-regular-font;
