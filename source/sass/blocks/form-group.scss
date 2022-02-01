@@ -7,7 +7,7 @@
 
 @media (min-width: $tablet-width) {
   .form-group {
-    padding: 0 40px 55px;
+    padding: 0 40px 52px;
   }
 }
 
@@ -33,7 +33,7 @@
 
 @media (min-width: $tablet-width) {
   .form-group--contacts {
-    padding-bottom: 45px;
+    padding-bottom: 44px;
 
     &::before {
       top: 942px;
@@ -106,7 +106,7 @@
 
 @media (min-width: $tablet-width) {
   .form-group__label {
-    margin-right: 18px;
+    margin-right: 20px;
     font-size: 20px;
     line-height: 30px;
 
@@ -135,6 +135,13 @@
       grid-column: 2/3;
       grid-row: 2/3;
     }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-group__field {
+    height: 50px;
+    margin-bottom: 22px;
   }
 }
 
@@ -200,8 +207,8 @@
 
 @media (min-width: $tablet-width) {
   .form-group__input {
-    margin-bottom: -1px;
-    padding: 10px 19px;
+    margin-bottom: -2px;
+    padding: 11px 17px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -247,7 +254,8 @@
 
 @media (min-width: $tablet-width) {
   .form-group__input--textarea {
-    padding-top: 7px;
+    padding: 7px 16px;
     height: 174px;
+    margin: 0;
   }
 }
