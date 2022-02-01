@@ -49,7 +49,7 @@
       position: absolute;
       width: 50%;
       height: 692px;
-      top: -170px;
+      top: -168px;
       left: 50%;
       background-image: url("../img/cat_index_desktop.jpg");
       opacity: 0.9;
@@ -77,10 +77,11 @@
 @media (min-width: $desktop-width) {
   .promo__wrapper {
     grid-template-columns: 420px 552px;
+    grid-template-rows: 120px min-content;
     margin-bottom: 150px;
     padding-left: 190px;
     padding-right: 300px;
-    row-gap: 40px;
+    row-gap: 57px;
   }
 }
 

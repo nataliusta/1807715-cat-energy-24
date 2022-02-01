@@ -30,6 +30,7 @@
 @media (min-width: $tablet-width) {
   .slider__wrapper {
     display: grid;
+    justify-content: center;
     row-gap: 5px;
   }
 }
@@ -37,7 +38,7 @@
 @media (min-width: $desktop-width) {
   .slider__wrapper {
     grid-template-rows: 592px min-content;
-    margin-bottom: 45px;
+    margin-bottom: -37px;
     padding: 0 40px;
     padding-bottom: 45px;
     background-color: transparent;
@@ -142,15 +143,16 @@
   .slider__image--foreground {
     width: 300px;
     top: -16px;
-    left: -38px;
+    left: -87px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .slider__image--background {
-    width: 510px;
-    top: -8px;
-    left: 0;
+    width: 524px;
+    top: -10px;
+    left: -27px;
+    background-size: cover;
   }
 }
 
@@ -163,7 +165,7 @@
 
 @media (min-width: $tablet-width) {
   .slider__container {
-    grid-template-columns: 70px 426px 70px;
+    grid-template-columns: 70px 426px 72px;
     align-items: center;
     column-gap: 2px;
     margin-bottom: 12px;
@@ -172,9 +174,13 @@
 
 @media (min-width: $desktop-width) {
   .slider__container {
-    padding-bottom: 0;
-    margin-top: 6px;
-    margin-left: -30px;
+    padding-bottom: 68px;
+    margin-top: -65px;
+    margin-bottom: 20px;
+    margin-left: -78px;
+    width: 592px;
+    column-gap: 5px;
+    text-align: center;
   }
 }
 
@@ -211,6 +217,12 @@
     width: 420px;
     height: 6px;
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__range {
+    width: 426px;
   }
 }
 
@@ -257,5 +269,11 @@
     border-bottom: 1px dotted $color-grey-500;
     margin: 0 auto;
     margin-left: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__button {
+    margin-left: 4px;
   }
 }
