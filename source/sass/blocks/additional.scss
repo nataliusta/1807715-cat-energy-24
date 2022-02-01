@@ -49,7 +49,7 @@
 
 @media (min-width: $tablet-width) {
   .additional__list {
-    margin-bottom: 70px;
+    margin-bottom: 32px;
   }
 }
 
@@ -74,7 +74,7 @@
 
 @media (min-width: $tablet-width) {
   .additional__card {
-    padding: 19px 38px 24px;
+    padding: 25px 38px 28px;
     border: 1px solid $color-grey-500;
     border-bottom: none;
   }
@@ -115,7 +115,7 @@
 @media (min-width: $tablet-width) {
   .additional__title {
     margin: 0;
-    margin-bottom: 78px;
+    margin-bottom: 80px;
     padding: 0 37px;
     font-size: 36px;
     line-height: 36px;
@@ -183,8 +183,9 @@
     grid-column: 2/3;
     grid-row: 2/3;
     justify-self: end;
-    margin-top: -17px;
+    margin-top: -28px;
     margin-right: 93px;
+    margin-bottom: 19px;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -214,7 +215,7 @@
   .additional__price {
     grid-column: 2/3;
     grid-row: 2/3;
-    margin-top: -16px;
+    margin-top: -28px;
     font-size: 16px;
     line-height: 20px;
   }
