@@ -6,8 +6,7 @@
   column-gap: 10px;
   margin: 0;
   padding: 0;
-  margin-bottom: 21px;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 5px;
   list-style-type: none;
   border-top: 1px solid $color-grey-600;
@@ -17,7 +16,8 @@
 @media (min-width: $tablet-width) {
   .social-list {
     margin: 0 auto;
-    padding-right: 14px;
+    margin-left: 35px;
+    margin-bottom: 5px;
     border: none;
   }
 }
@@ -29,16 +29,17 @@
 
 @media (min-width: $tablet-width) {
   .social-list__item {
-    margin-right: -6px;
+    margin-right: -1px;
   }
 }
 
 .social-list__link {
   display: block;
   padding: 10px;
+  fill: $color-grey-550;
 
   &:hover {
-    stroke: $color-green;
+    fill: $color-green;
   }
 
   &:active {
@@ -47,18 +48,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social-list__icon--vkontakte {
-    width: 30px;
-    height: 22px;
-  }
-
-  .social-list__icon--instagram {
-    width: 23px;
-    height: 23px;
-  }
-
-  .social-list__icon--facebook {
-    width: 28px;
-    height: 33px;
+  .social-list__icon {
+    width: 32px;
+    height: 32px;
   }
 }
