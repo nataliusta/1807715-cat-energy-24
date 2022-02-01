@@ -37,9 +37,9 @@
   .catalog-page__card {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, min-content);
-    row-gap: 26px;
+    row-gap: 29px;
     margin: 0;
-    padding: 20px 39px 40px;
+    padding: 25px 37px 39px 39px;
     background-color: $color-grey-100;
     border: none;
   }
@@ -64,7 +64,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-page__image {
-    margin-top: -93px;
+    margin-top: -86px;
     width: 168px;
     height: 200px;
   }
@@ -93,7 +93,7 @@
 @media (min-width: $tablet-width) {
   .catalog-page__card-title {
     grid-row: 3/4;
-    margin-top: 22px;
+    margin-top: -10px;
     padding: 0 45px;
     font-size: 20px;
     line-height: 24px;

@@ -46,17 +46,18 @@
 
 .slider__images {
   display: grid;
+  justify-content: center;
   grid-template-columns: var(--active-position, 50%), 1fr;
   margin-bottom: 2px;
   overflow: hidden;
+  height: 515px;
 }
 
 @media (min-width: $tablet-width) {
   .slider__images {
-    justify-content: center;
     padding: 0 70px;
     margin-left: -15px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
   }
 }
 
@@ -79,7 +80,7 @@
     background-color: $color-grey-100;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 50%;
     height: 232px;
     top: 14px;
     left: -12px;
@@ -96,11 +97,11 @@
     grid-row: 1/2;
     top: -15px;
     right: -10px;
+    width: 100%;
+    height: 232px;
     background-image: url("../img/cat_background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 232px;
   }
 }
 
@@ -122,11 +123,14 @@
 
 @media (min-width: $tablet-width) {
   .slider__image--background {
-    height: 510px;
-    top: -6px;
-    right: -25px;
-    width: 532px;
+    position: absolute;
+    height: 511px;
+    top: -2px;
+    left: 35px;
+    width: 100%;
+    clip: rect(auto, auto, auto, 239px);
     background-image: url("../img/cat_background_tablet.png");
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat_background_tablet@2x.png");
