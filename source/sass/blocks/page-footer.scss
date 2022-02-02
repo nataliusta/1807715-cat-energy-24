@@ -3,21 +3,22 @@
 }
 
 .page-footer__wrapper {
-  padding: 39px 20px 22px;
+  padding: 38px 20px 22px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 32px;
     align-items: center;
-    padding: 56px 30px;
+    padding: 58px 30px 55px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding: 58px 50px;
+    padding: 58px 110px;
   }
 }
 
@@ -45,7 +46,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   width: 128px;
   height: 24px;
 }

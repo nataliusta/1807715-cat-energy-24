@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column: 2/3;
+  align-self: start;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
@@ -9,11 +10,20 @@
 
 @media (min-width: $tablet-width) {
   .specifications {
+    grid-column: 1/2;
+    grid-row: 3/4;
     position: relative;
-    row-gap: 14px;
-    margin-bottom: 15px;
+    row-gap: 15px;
+    margin-bottom: 11px;
     font-size: 16px;
     line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .specifications {
+    row-gap: 16px;
+    margin-bottom: 12px;
   }
 }
 

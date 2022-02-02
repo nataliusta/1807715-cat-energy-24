@@ -7,10 +7,12 @@
 }
 
 .copyright__link {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 27px;
+  column-gap: 22px;
   align-items: center;
   margin: 0 auto;
+  margin-top: 21px;
   text-decoration: none;
 
   &:active {
@@ -20,8 +22,9 @@
 
 @media (min-width: $tablet-width) {
   .copyright__link {
-    width: 163px;
+    width: 165px;
     margin-right: 0;
+    margin-top: 0;
   }
 }
 

@@ -7,8 +7,8 @@
   grid-template-columns: 30px 1fr;
   align-items: center;
   gap: 15px;
-  margin-bottom: 15px;
-  padding-left: 20px;
+  margin-bottom: 13px;
+  padding-left: 19px;
   cursor: pointer;
 
   &::before {
@@ -35,8 +35,15 @@
 
 @media (min-width: $tablet-width) {
   .radio__text {
-    padding-left: 5px;
-    gap: 30px;
+    padding-left: 0;
+    gap: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio__text {
+    grid-template-columns: 40px 1fr;
+    column-gap: 19px;
   }
 }
 
@@ -53,7 +60,7 @@
 
 @media (min-width: $tablet-width) {
   .radio__input:checked + .radio__text::after {
-    margin-left: 11px;
+    margin-left: 10px;
     width: 18px;
     height: 18px;
   }

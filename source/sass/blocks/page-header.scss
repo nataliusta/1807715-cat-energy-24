@@ -1,6 +1,6 @@
 .page-header {
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 12px 20px 11px 20px;
   width: 100%;
   border-bottom: 1px solid $color-grey-600;
 }
@@ -9,14 +9,14 @@
   .page-header {
     display: flex;
     justify-content: space-between;
-    padding: 24px 30px;
+    padding: 26px 30px 22px 30px;
     border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding: 53px 50px;
+    padding: 53px 110px;
     max-width: $desktop-width;
   }
 }
@@ -39,6 +39,6 @@
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
-    width: 150px;
+    width: 174px;
   }
 }

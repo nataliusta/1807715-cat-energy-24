@@ -18,13 +18,19 @@
   .form-page__form--container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 90px;
+    column-gap: 80px;
     align-items: center;
   }
 }
 
 .form-page__input-button {
   margin-bottom: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__input-button {
+    padding: 16px 40px;
+  }
 }
 
 .form-page__legend {
@@ -42,10 +48,16 @@
   .form-page__legend--small {
     grid-column: 2/3;
     margin-left: 0;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
     font-size: 16px;
     line-height: 16px;
     align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__legend--small {
+    padding-bottom: 22px;
   }
 }
 
@@ -55,8 +67,10 @@
 
 @media (min-width: $tablet-width) {
   .form-page__container {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 61px;
+    grid-template-columns: 1fr 180px;
+    column-gap: 60px;
+    margin-left: 40px;
+    margin-right: 144px;
     padding-bottom: 50px;
   }
 }
@@ -64,5 +78,8 @@
 @media (min-width: $desktop-width) {
   .form-page__container {
     column-gap: 81px;
+    margin-left: 0;
+    margin-right: 390px;
+    padding-bottom: 61px;
   }
 }
