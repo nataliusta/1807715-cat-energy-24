@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   padding-top: 12px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   list-style-type: none;
   border-top: 1px solid $color-grey-600;
   border-bottom: 1px solid $color-grey-600;
@@ -15,10 +15,19 @@
 
 @media (min-width: $tablet-width) {
   .social-list {
+    column-gap: 6px;
     margin: 0 auto;
-    margin-left: 35px;
+    margin-left: 39px;
     margin-bottom: 5px;
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    margin-left: 0;
+    margin-right: 0;
+    column-gap: 5px;
   }
 }
 
@@ -30,6 +39,12 @@
 @media (min-width: $tablet-width) {
   .social-list__item {
     margin-right: -1px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list__item {
+    margin-right: 4px;
   }
 }
 

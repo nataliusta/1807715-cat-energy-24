@@ -241,6 +241,16 @@
     height: 34px;
     border: 1px solid $color-grey-500;
     border-radius: 50%;
+    box-shadow: 0 3px 5px 0 $color-grey-600;
+
+    &:hover {
+      box-shadow: 0 5px 5px 0 $color-grey-500;
+    }
+
+    &:active {
+      border: 1px solid $color-green;
+    }
+
 
     &::before {
       position: absolute;
@@ -273,6 +283,14 @@
     border-bottom: 1px dotted $color-grey-500;
     margin: 0 auto;
     margin-left: 4px;
+
+    &:hover {
+      border-bottom: 1px solid $color-grey-500;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 

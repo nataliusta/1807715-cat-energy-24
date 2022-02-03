@@ -17,9 +17,10 @@
   .contacts__wrapper {
     column-gap: 93px;
     position: absolute;
-    left: 110px;
+    left: 50%;
     z-index: 1;
     margin: 0;
+    margin-left: -610px;
     margin-top: 95px;
     max-width: 565px;
     padding: 60px 80px;

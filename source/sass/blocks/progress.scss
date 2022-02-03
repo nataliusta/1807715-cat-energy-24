@@ -3,12 +3,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .progress {
+    background: linear-gradient(to top, $color-grey-100 74%, $color-white 26%);
+  }
+}
+
+@media (min-width: $desktop-width) {
   .progress__container {
     display: grid;
     grid-template-columns: 1fr 720px;
     margin: 0 auto;
+    max-width: $desktop-width;
     margin-bottom: -24px;
-    background: linear-gradient(to top, $color-grey-100 74%, $color-white 26%);
   }
 }
 
@@ -135,6 +141,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+  margin-right: -3px;
   font-size: 14px;
   line-height: 18px;
   text-align: start;
@@ -172,6 +179,7 @@
 
 @media (min-width: $tablet-width) {
   .progress__text {
+    margin-right: 0;
     margin-bottom: 53px;
     padding-right: 17px;
     font-size: 16px;

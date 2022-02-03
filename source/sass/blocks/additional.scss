@@ -26,7 +26,7 @@
 
 @media (min-width: $tablet-width) {
   .additional__wrapper {
-    padding-bottom: 70px;
+    padding-bottom: 78px;
   }
 }
 
@@ -240,6 +240,14 @@
 .additional__button {
   grid-column: 1/-1;
   text-align: center;
+}
+
+.additional__button:hover {
+  background-color: $color-green-200;
+}
+
+.additional__button:active {
+  opacity: 0.6;
 }
 
 @media (min-width: $desktop-width) {

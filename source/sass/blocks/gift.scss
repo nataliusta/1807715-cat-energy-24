@@ -1,10 +1,10 @@
 .gift {
   position: relative;
   padding: 185px 45px 43px 43px;
-  height: 100%;
-  background-image: url("../img/catalog/cat_catalog_mobile.jpg"), linear-gradient(to bottom, $color-grey-300 50%, $color-grey-800);
+  background-image: url("../img/catalog/cat_catalog_mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-color: $color-grey-800;
   object-fit: cover;
 
   &::before {
@@ -38,7 +38,7 @@
     display: grid;
     grid-template-columns: 1fr 180px;
     padding: 70px 100px;
-    background-image: url("../img/catalog/cat_catalog_tablet.jpg"), linear-gradient(to bottom, $color-grey-300, $color-grey-800);
+    background-image: url("../img/catalog/cat_catalog_tablet.jpg");
 
     &::before {
       left: -472px;
@@ -50,11 +50,11 @@
   .gift {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 100px;
+    grid-template-rows: 150px 1fr;
     padding: 187px 60px 40px;
     width: 245px;
-    height: 289px;
-    background-image: url("../img/catalog/cat_catalog_desktop.jpg"), linear-gradient(to bottom, $color-grey-300, $color-grey-800);
+    margin-bottom: 67px;
+    background-image: url("../img/catalog/cat_catalog_desktop.jpg");
 
     &::before {
       left: 0;
@@ -64,7 +64,7 @@
 
     &::after {
       width: 245px;
-      height: 289px;
+      margin-bottom: 67px;
     }
   }
 }
@@ -97,6 +97,8 @@
 @media (min-width: $desktop-width) {
   .gift__text {
     grid-row: 2/3;
+    align-self: center;
+    margin-top: -2px;
     padding: 0 40px;
     text-align: center;
   }
