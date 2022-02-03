@@ -61,17 +61,19 @@
         <p class="promo__slogan-text">
           Занялся собой? Займись котом!
         </p>
-        <picture>
-          <source media="(min-width: 1440px)" type="image/webp"
-            srcset="img/index_main_desktop.webp, img/index_main_desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" type="image/webp"
-            srcset="img/index_main_tablet.webp, img/index_main_tablet@2x.webp 2x">
-          <source type="image/webp" src="img/index_main_mobile.webp" srcset="img/index_main_mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/index_main_desktop.png, img/index_main_desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/index_main_tablet.png, img/index_main_tablet@2x.png 2x">
-          <img class="promo__image" src="img/index_main_mobile.png" srcset="img/index_main_mobile@2x.png 2x" width="280"
-            height="270" alt="Питание для котов Cat Energy Pro.">
-        </picture>
+        <div class="promo__image">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/webp"
+              srcset="img/index_main_desktop.webp, img/index_main_desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/index_main_tablet.webp, img/index_main_tablet@2x.webp 2x">
+            <source type="image/webp" src="img/index_main_mobile.webp" srcset="img/index_main_mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/index_main_desktop.png, img/index_main_desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index_main_tablet.png, img/index_main_tablet@2x.png 2x">
+            <img src="img/index_main_mobile.png" srcset="img/index_main_mobile@2x.png 2x" width="280" height="270"
+              alt="Питание для котов Cat Energy Pro.">
+          </picture>
+        </div>
         <a class="promo__button button button--large" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -225,8 +227,7 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon" width="22" height="22" aria-hidden="true"
-                focusable="false">
+              <svg class="social-list__icon" width="22" height="22" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon_vkontakte"></use>
               </svg>
               <span class="visually-hidden">
@@ -236,8 +237,7 @@
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon" width="22" height="22" aria-hidden="true"
-                focusable="false">
+              <svg class="social-list__icon" width="22" height="22" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon_instagram"></use>
               </svg>
               <span class="visually-hidden">
@@ -247,8 +247,7 @@
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon" width="22" height="22" aria-hidden="true"
-                focusable="false">
+              <svg class="social-list__icon" width="22" height="22" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon_facebook"></use>
               </svg>
               <span class="visually-hidden">
